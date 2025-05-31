@@ -2111,3 +2111,31 @@ button:focus {
 .icon-rotate.open {
   transform: rotate(90deg);
 }
+
+
+
+
+
+
+.servicesFull{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  margin: 0;
+  width: 100%;
+}
+.servicesFull .service-card{
+  width: 32%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.service-card p{
+  margin-top: 10px !important;
+}
+
+
+
+.swiper-wrapper .swiper-slide{
+  width: 33%;
+  height: auto;
+}
