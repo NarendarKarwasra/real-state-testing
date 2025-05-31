@@ -72,12 +72,12 @@
   <section class="hero bg-light" id="enquiry">
     <div class="container hero-content">
       <div class="row">
-        <div class="col-12 col-lg-6 col-sm-12 align-self-center">
+        <div class="col-12 col-lg-6 col-sm-12 align-self-center hero-content-top">
           <div>
             <h1 class="display-5 text-white font-weight-bold pb-0 mb-0">Real homes live here</h1>
-            <p class="text-white font-weight-light">Real Prices. Real Photos. Real Properties.</p>
+            <p class="text-white font-weight-light hero-content-top-p1">Real Prices. Real Photos. Real Properties.</p>
 
-            <p class="text-light font-weight-light" style="font-size: 15px;">At [Your Brand Name], we showcase real
+            <p class="text-light font-weight-light hero-content-top-p2" style="font-size: 15px;">At [Your Brand Name], we showcase real
               homes with real prices, real
               photos, and authentic property
               details—no filters, no false promises.</p>
@@ -103,30 +103,29 @@
                 </div>
               </div>
               <div class="row mt-2">
-                <div class="col-12 col-lg-6 col-sm-12">
+                <div class="col-12 col-lg-6 col-sm-6">
                   <div class="form-group mb-2">
                     <label for="name">Name</label>
                     <input type="text" class="form-control custom-input" id="name" placeholder="Enter Name" />
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 col-sm-12">
+                <div class="col-12 col-lg-6 col-sm-6">
                   <div class="form-group mb-2">
                     <label for="mobileNumber">Mobile Number *</label>
                     <input type="tel" class="form-control custom-input" id="mobileNumber"
                       placeholder="Enter Mobile Number" />
                   </div>
                 </div>
-
               </div>
               <div class="row">
-                <div class="col-12 col-lg-6 col-sm-12">
+                <div class="col-12 col-lg-6 col-sm-6">
                   <div class="form-group mb-2">
                     <label for="locationInput">Preferred Location *</label>
                     <input type="text" class="form-control custom-input" id="locationInput"
                       placeholder="Enter Location" />
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 col-sm-12">
+                <div class="col-12 col-lg-6 col-sm-6">
                   <div class="form-group mb-2">
                     <label for="propertyType">Property Type *</label>
                     <div class="custom-select-wrapper">
@@ -146,7 +145,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 col-lg-6 col-sm-12">
+                <div class="col-12 col-lg-6 col-sm-6">
                   <div class="form-group mb-2">
                     <label for="areaSqft">Area (sqft)</label>
                     <div class="custom-select-wrapper">
@@ -165,7 +164,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6 col-sm-12">
+                <div class="col-12 col-lg-6 col-sm-6">
                   <div class="form-group mb-2">
                     <label for="priceRange">Price</label>
                     <div class="custom-select-wrapper">
@@ -706,11 +705,11 @@
   <footer class="footer text-white pt-5 " id="contact">
     <div class="container">
       <div class="row ">
-        <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="col-lg-5 col-md-5 col-sm-12">
           <div class="footer-logo">
             <img src="./assets/footer-logo2.png" alt="Brickly Logo" class="img-fluid" style="margin: 0 !important;" />
           </div>
-          <p class="mb-4 mt-4 pt-2 pr-4 mr-4">
+          <p class="mb-4 mt-4 pt-2 pr-4 mr-4 footer-p">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
@@ -719,7 +718,7 @@
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-sm-12">
           <h5 class="fw-bold mb-3">Services</h5>
           <ul class="list-unstyled">
             <li class="mb-2">
@@ -743,7 +742,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-4 col-md-12 col-sm-12 mobile-view-center">
+        <div class="col-lg-4 col-md-4 col-sm-12 mobile-view-center">
           <h5 class="fw-bold mb-3">Contacts</h5>
           <p class="mb-2 mobile-view">
             <i class="fas fa-map-marker-alt mr-2 me-2"></i>
@@ -771,6 +770,34 @@
       </div>
     </div>
   </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Thank You Popup Popup -->
+<div id="thankYouPopup" class="thank-you-popup">
+  <div class="thank-you-content">
+    <i class="fas fa-window-close" onclick="closePopup()"></i>
+    <div class="popup-img">
+      <img src="assets/popup.png" alt="">
+    </div>
+    <h4>Thank You!</h4>
+    <p>Your form has been submitted successfully.</p>
+    <p>Our support team will contact you soon.</p>
+    <button onclick="closePopup()" class="btn popup-button">Done</button>
+  </div>
+</div>
+
+
+
+
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -921,7 +948,6 @@
           mobileNumberInput.focus();
           return;
         }
-
         // Validate Preferred Location
         const locationInput = document.getElementById('locationInput');
         if (!locationInput.value.trim()) {
@@ -930,7 +956,6 @@
           locationInput.focus();
           return;
         }
-
         // Validate Property Type
         const propertyTypeSelect = document.getElementById('propertyType');
         // Now this check will correctly use the value from the hidden select
@@ -940,41 +965,22 @@
           propertyTypeSelect.closest('.custom-select-wrapper').querySelector('.custom-select-display').focus();
           return;
         }
-
-        // You can add validation for Area and Price as well, if they become required
-        // const areaSqftSelect = document.getElementById('areaSqft');
-        // if (!areaSqftSelect.value) {
-        //   alert('Please select an area.');
-        //   isValid = false;
-        //   areaSqftSelect.closest('.custom-select-wrapper').querySelector('.custom-select-display').focus();
-        //   return;
-        // }
-
-        // const priceRangeSelect = document.getElementById('priceRange');
-        // if (!priceRangeSelect.value) {
-        //   alert('Please select a price range.');
-        //   isValid = false;
-        //   priceRangeSelect.closest('.custom-select-wrapper').querySelector('.custom-select-display').focus();
-        //   return;
-        // }
-
-
         // If all validations pass
         if (isValid) {
-          alert('Form submitted successfully!');
-          // Here you would typically send the form data to a server
-          // console.log({
-          //   mobileNumber: mobileNumberInput.value,
-          //   email: document.getElementById('email').value,
-          //   location: locationInput.value,
-          //   propertyType: propertyTypeSelect.value,
-          //   areaSqft: document.getElementById('areaSqft').value,
-          //   priceRange: document.getElementById('priceRange').value
-          // });
+          showPopup();
         }
       });
     });
+    function closePopup() {
+      const Popup = document.getElementById('thankYouPopup');
+      Popup.style.display = 'none';
+    };
+    function showPopup() {
+      const Popup = document.getElementById('thankYouPopup');
+      Popup.style.display = 'flex';
+    };
   </script>
+
 
   <!-- Nave Bar -->
   <script>

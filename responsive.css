@@ -24,6 +24,62 @@
 
 
 
+.hero {
+  max-height: 100%;
+}
+  .hero-content-top{
+    /* margin-top: 180px; */
+    text-align: center;
+  }
+  .hero-content-top h1{
+    font-size: 40px;
+  }
+  .hero-content-top .hero-content-top-p1{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .hero-content-top .hero-content-top-p2{
+    font-size: 14px !important;
+  }
+  .hero-content-top .cta-btn{
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .search-box-container{
+    padding: 10px;
+  }
+  .search-box-container h3{
+    font-size: 24px;
+    margin-bottom: 6px !important;
+  }
+  .search-box-container p{
+    margin-bottom: 10px !important;
+  }
+  .search-box-container .custom-input, .search-box-container .custom-select-display{
+    height: 40px !important;
+  }
+.custom-input, .custom-select-display {
+    padding: 18px 15px;
+}
+
+
+
+
+
+.about-header-banner {
+  height: 200px;
+}
+.about-header-banner h1{
+  font-size: 30px;
+}
+.about-content h2{
+  margin-top: 20px;
+}
+
+
+
+
   .choose-card{
   width: 48%;
 }
@@ -32,11 +88,24 @@
 
 }
 
+
+
+
+
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
+
 /* Mobile (max-width: 767.98px) */
 @media (max-width: 767.98px) {
-  .hero-content {
-    margin-top: 70px;
-  }
 
   .hero-content h1 {
     font-size: 2.2rem;
@@ -127,6 +196,17 @@
     margin: 0 5px;
   }
 
+
+
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
   .city-tab {
     padding: 8px 16px;
     font-size: 0.95rem;
@@ -147,6 +227,15 @@
 
   .footer {
     text-align: center;
+  }
+
+  .footer-logo{
+    margin: auto;
+  }
+  .footer-p{
+    text-align: center;
+    padding: 0 !important;
+    margin-right: 0 !important;
   }
 
   .footer .social-icons {
@@ -327,17 +416,52 @@
   .team-member-card {
     margin-bottom: 1.5rem;
   }
+
+
+
+
+
+  .about-header-banner {
+  height: 130px;
 }
+.about-header-banner h1{
+  font-size: 24px;
+}
+.about-content h2{
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
 
 /* Extra Small Devices (max-width: 575.98px) */
 @media (max-width: 575.98px) {
-  .hero {
-    min-height: 150vh;
-  }
-  .hero-content {
-    padding-top: 70px;
-    padding-bottom: 30px;
-    text-align: center;
+
+  .search-box-container{
+    width: 90%;
+    margin: auto;
   }
 
   #faq img {
@@ -373,12 +497,12 @@
 
   .custom-input,
   .custom-select {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
   }
 
   .custom-search-btn {
     font-size: 14px;
-    height: 46px;
+    /* height: 46px; */
   }
 
   .custom-search-btn span.text {
@@ -459,8 +583,24 @@
 .choose-card{
   border-radius: 10px;
   width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
+.why-choose-us .container{
+  padding: 0;
+}
+
+
+
+
+
+  .about-header-banner {
+  height: 100px;
+}
+.about-header-banner h1{
+  font-size: 20px;
+}
 
 
 
