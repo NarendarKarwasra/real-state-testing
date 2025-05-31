@@ -6,6 +6,11 @@ body {
   margin: 0;
   padding: 0;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 :root {
   --primary-color: #8c1d1c; /* Warm yellow */
@@ -60,7 +65,7 @@ a:hover {
   font-weight: 700;
   color: var(--text-dark);
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .bg-light-topBar {
   background-color: #f5f9ff;
@@ -1283,7 +1288,7 @@ button:focus {
   color: var(--text-light);
   display: flex;
   background-size: cover !important;
-  height: 230px;
+  height: 300px;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
@@ -1296,7 +1301,7 @@ button:focus {
   color: var(--text-light);
   display: flex;
   background-size: cover !important;
-  height: 230px;
+  height: 300px;
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
@@ -1339,6 +1344,13 @@ button:focus {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.card-main-img{
+  height: 30vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .blog-post-card .card-img-top {
   height: 400px; /* Fixed height for consistency */
@@ -1376,7 +1388,7 @@ button:focus {
 }
 
 .sidebar-list {
-  padding-left: 0;
+  padding-left: 10px;
 }
 
 .sidebar-list li {
@@ -1417,6 +1429,10 @@ button:focus {
 }
 
 /* Popular Tags */
+.tag-buttons {
+  margin-left: 10px;
+}
+
 .tag-buttons .btn-outline-secondary {
   color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -1430,6 +1446,9 @@ button:focus {
 }
 
 /* Recent Posts */
+.recent-posts-list{
+  margin-left: 10px;
+}
 .recent-posts-list img {
   width: 50px;
   height: 50px;
@@ -1911,7 +1930,7 @@ button:focus {
 
 
 
-
+/* fixed buttons on screen for contact */
     .fixed-on-screen {
       position: fixed;
       top: 50%;
@@ -2018,7 +2037,6 @@ button:focus {
 .popup-img{
   width: 20%;
   margin: auto;
-  margin-top: 20px;
 }
 .popup-img img{
   width: 100%;
@@ -2037,6 +2055,7 @@ button:focus {
 }
 .thank-you-content h4{
   font-weight: 600;
+  margin-top: 10px;
 }
 .thank-you-content p{
   margin-bottom: 2px;
@@ -2063,3 +2082,32 @@ button:focus {
 
 
 
+.sidebar-widget .card-body{
+  padding-top: 0;
+}
+
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  /* margin-left: 10px; */
+}
+.submenu li{
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+.submenu .text-secondary{
+  font-weight: 500;
+}
+
+.submenu.open {
+  max-height: 200px;
+}
+
+.icon-rotate {
+  transition: transform 0.3s ease;
+}
+
+.icon-rotate.open {
+  transform: rotate(90deg);
+}

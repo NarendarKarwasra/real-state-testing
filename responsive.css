@@ -68,7 +68,10 @@
 
 
 .about-header-banner {
-  height: 200px;
+  height: 240px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
 }
 .about-header-banner h1{
   font-size: 30px;
@@ -77,6 +80,18 @@
   margin-top: 20px;
 }
 
+
+
+
+.blog-header-banner {
+  height: 240px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.blog-header-banner h1{
+  font-size: 30px;
+}
 
 
 
@@ -421,8 +436,62 @@
 
 
 
+
+
+
+  .fixed-on-screen {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
+    transform: none;
+    gap: 12px;
+  }
+
+  .email-container {
+    display: none;
+  }
+
+  .button-container {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  .icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .whatsapp-container .icon{
+    font-size: 20px;
+  }
+
+  .button-container .label {
+    display: none;
+  }
+
+  .icon {
+    margin-right: 0;
+  }
+
+.button-container:hover {
+  width: 40px;
+  padding-right: 0;
+}
+.whatsapp-container:hover {
+  width: 40px;
+}
+
+
+
+
+
+
+
+
   .about-header-banner {
-  height: 130px;
+  height: 220px;
 }
 .about-header-banner h1{
   font-size: 24px;
@@ -432,6 +501,13 @@
 }
 
 
+
+.blog-header-banner {
+height: 220px;
+}
+.blog-header-banner h1{
+font-size: 24px;
+}
 
 
 
@@ -596,9 +672,18 @@
 
 
   .about-header-banner {
-  height: 100px;
+  height: 180px;
 }
 .about-header-banner h1{
+  font-size: 20px;
+}
+
+
+
+.blog-header-banner {
+  height: 180px;
+}
+.blog-header-banner h1{
   font-size: 20px;
 }
 
