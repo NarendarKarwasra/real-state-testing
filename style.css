@@ -1842,6 +1842,9 @@ button:focus {
 
 
 
+/* changed css 30-5-2025 */
+
+
 
 
 
@@ -1908,9 +1911,6 @@ button:focus {
 
 
 
-
-
-
     .fixed-on-screen {
       position: fixed;
       top: 50%;
@@ -1942,6 +1942,10 @@ button:focus {
       font-size: 22px;
       margin-right: 10px;
     }
+    .whatsapp-container .icon{
+      font-size: 24px;
+      transform: scale(1.1);
+    }
 
     .label {
       white-space: nowrap;
@@ -1953,17 +1957,29 @@ button:focus {
     }
     .call-container {
       background-color: #007BFF;
+      /* background-color: #3fa0e7; */
     }
 
     .email-container {
-      background-color: #d87c6a;
+      background-color: #ff5d5d;
+    }
+    
+    .whatsapp-container {
+      background-color: #25D366;
     }
 
     .button-container:hover {
-      width: 150px;
+      width: 135px;
       padding-right: 20px;
     }
 
     .button-container:hover .label {
       opacity: 1;
+    }
+
+    .whatsapp-container:hover {
+      width: 190px;
+    }
+    .email-container:hover {
+      width: 150px;
     }

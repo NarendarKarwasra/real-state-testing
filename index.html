@@ -37,8 +37,8 @@
           <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#">Home</a></li>
           <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#about">About</a></li>
           <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#blog">Blog</a></li>
-          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#enquiry">Enquiry</a></li>
           <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#services">Services</a></li>
+          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#enquiry">Enquiry</a></li>
         </ul>
       </div>
     </div>
@@ -57,6 +57,11 @@
     <div class="button-container email-container" onclick="sendEmail()">
       <i class="fas fa-envelope icon"></i>
       <span class="label email-label">Email Us</span>
+    </div>
+    <!-- Whatsapp Button -->
+    <div class="button-container whatsapp-container" onclick="sendWhatsapp()">
+      <i class="fab fa-whatsapp icon"></i>
+      <span class="label whatsapp-label">Whatsapp Us</span>
     </div>
   </div>
 
@@ -190,7 +195,7 @@
   </section>
 
   <!--  Find Your Dream Home -->
-  <section class="dream-home py-5" data-aos="fade-up" id="about">
+  <section class="dream-home py-5" data-aos="fade-up">
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-lg-6">
@@ -446,65 +451,68 @@
 
 
 
-      <!-- Our Services -->
+  <!-- Our Services -->
 
-    <section id="services" class="pt-5">
-        <div class="container">
-            <h2 data-aos="fade-up" class="h2_heading text-center" style="margin-bottom: 20px;">Our Services</h2>
-            <p class="subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-              At [Your Company Name], we offer a comprehensive range of real estate services designed to help you buy, sell, rent, or invest with confidence. Whether you're a first-time homebuyer, a seasoned investor, or looking to list your property, our team is committed to guiding you through every step with expert advice and personalized support.
-          </p>
-            <div class="row">
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-card">
-                        <i class="fas fa-house-chimney icon"></i>
-                        <h3>Property Sales</h3>
-                        <p class="mb-2 mobile-view">Expert assistance in buying and selling residential and commercial
-                            properties.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-card">
-                        <i class="fas fa-handshake icon"></i>
-                        <h3>Property Rentals</h3>
-                        <p class="mb-2 mobile-view">Find your perfect rental home or list your property for rent with
-                            ease.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-card">
-                        <i class="fas fa-chart-line icon"></i>
-                        <h3>Market Analysis</h3>
-                        <p class="mb-2 mobile-view">Comprehensive market insights and valuation reports for informed
-                            decisions.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-card">
-                        <i class="fas fa-users-gear icon"></i>
-                        <h3>Property Management</h3>
-                        <p class="mb-2 mobile-view">Hassle-free management of your properties, ensuring optimal returns.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="service-card">
-                        <i class="fas fa-scroll icon"></i>
-                        <h3>Legal & Advisory</h3>
-                        <p class="mb-2 mobile-view">Guidance on legal aspects, documentation, and real estate
-                            investments.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="service-card">
-                        <i class="fas fa-building icon"></i>
-                        <h3>Commercial Properties</h3>
-                        <p>Specialized services for buying, selling, and leasing commercial spaces.</p>
-                    </div>
-                </div>
-            </div>
+  <section id="services" class="pt-5">
+    <div class="container">
+      <h2 data-aos="fade-up" class="h2_heading text-center" style="margin-bottom: 20px;">Our Services</h2>
+      <p class="subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        At [Your Company Name], we offer a comprehensive range of real estate services designed to help you buy, sell,
+        rent, or invest with confidence. Whether you're a first-time homebuyer, a seasoned investor, or looking to list
+        your property, our team is committed to guiding you through every step with expert advice and personalized
+        support.
+      </p>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <i class="fas fa-house-chimney icon"></i>
+            <h3>Property Sales</h3>
+            <p class="mb-2 mobile-view">Expert assistance in buying and selling residential and commercial
+              properties.</p>
+          </div>
         </div>
-    </section>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <i class="fas fa-handshake icon"></i>
+            <h3>Property Rentals</h3>
+            <p class="mb-2 mobile-view">Find your perfect rental home or list your property for rent with
+              ease.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <i class="fas fa-chart-line icon"></i>
+            <h3>Market Analysis</h3>
+            <p class="mb-2 mobile-view">Comprehensive market insights and valuation reports for informed
+              decisions.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card">
+            <i class="fas fa-users-gear icon"></i>
+            <h3>Property Management</h3>
+            <p class="mb-2 mobile-view">Hassle-free management of your properties, ensuring optimal returns.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-card">
+            <i class="fas fa-scroll icon"></i>
+            <h3>Legal & Advisory</h3>
+            <p class="mb-2 mobile-view">Guidance on legal aspects, documentation, and real estate
+              investments.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-card">
+            <i class="fas fa-building icon"></i>
+            <h3>Commercial Properties</h3>
+            <p>Specialized services for buying, selling, and leasing commercial spaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -715,19 +723,19 @@
           <h5 class="fw-bold mb-3">Services</h5>
           <ul class="list-unstyled">
             <li class="mb-2">
-              <a href="index.html" class="text-white text-decoration-none">Home</a>
+              <a href="#" class="text-white text-decoration-none">Home</a>
             </li>
             <li class="mb-2">
-              <a href="about.html" class="text-white text-decoration-none">About</a>
+              <a href="#about" class="text-white text-decoration-none">About</a>
             </li>
             <li class="mb-2">
               <a href="#blog" class="text-white text-decoration-none">Blog</a>
             </li>
             <li class="mb-2">
-              <a href="#hero" class="text-white text-decoration-none">Enquiry</a>
+              <a href="#enquiry" class="text-white text-decoration-none">Enquiry</a>
             </li>
             <li>
-              <a href="services.html" class="text-white text-decoration-none">Services</a>
+              <a href="#services" class="text-white text-decoration-none">Services</a>
             </li>
             <li>
               <a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a>
@@ -1011,8 +1019,8 @@
 
 
 
-<!-- fixed button on screen -->
-<script>
+  <!-- fixed button on screen -->
+  <script>
     function callPhone() {
       const phoneNumber = "919057768074";
       window.open(`tel:${phoneNumber}`, "_self");
@@ -1023,6 +1031,13 @@
       const subject = "Laundry Service Inquiry";
       const body = "Hello, I would like to inquire about your laundry services.";
       window.open(`mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
+    }
+
+    function sendWhatsapp() {
+      const phoneNumber = "919999999999";
+      const message = "Hello! I would like to inquire about your laundry services.";
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
     }
   </script>
 
