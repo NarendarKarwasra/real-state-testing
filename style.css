@@ -1186,6 +1186,41 @@ button:focus {
   max-width: 800px;
 }
 
+
+.info-content {
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+  }
+
+  .read-more-btn {
+    cursor: pointer;
+  }
+
+  .gradient-fade {
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, white, transparent);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .info-img {
+    height: 160px;
+  }
+  .info-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+
+
 /* Our Story Section */
 .our-story {
   padding-top: 7rem;
@@ -1633,9 +1668,10 @@ button:focus {
 .team-member-card {
   position: relative;
   overflow: hidden;
-  border: 1px solid #eee;
+  border: 1px solid #e2e2e2;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  background: #faefec;
 }
 
 .team-member-card img {
