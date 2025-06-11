@@ -87,8 +87,8 @@
             </a>
           </div>
         </div>
-        <div class="col-12 col-lg-6 col-sm-12 align-self-center mt-sm-3" id="enquiry">
-          <div class="search-box-container ">
+        <div class="col-12 col-lg-6 col-sm-12 align-self-center mt-sm-3">
+          <section class="search-box-container" id="enquiry">
             <div class="container">
               <div class="row">
                 <div class="col-12">
@@ -186,7 +186,7 @@
               </div>
               <button type="submit" class="buttonEnquery submit-btn">Submit</button>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
@@ -1183,50 +1183,33 @@
       });
 
       const sections = $("section");
-    const navLinks = $(".nav-link.nav-text");
+      const navLinks = $(".nav-link.nav-text");
 
-    // $(window).on("scroll", function () {
-    //   let currentScroll = $(this).scrollTop();
+      $(window).on("scroll", function () {
+        const currentScroll = $(this).scrollTop();
+        const sections = $("section");
+        const navLinks = $(".nav-link.nav-text");
 
-    //   sections.each(function () {
-    //     const sectionTop = $(this).offset().top - 100;
-    //     const sectionBottom = sectionTop + $(this).outerHeight();
-    //     const id = $(this).attr("id");
+        let found = false;
 
-    //     if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
-    //       navLinks.removeClass("active");
-    //       $(`.nav-link[href="#${id}"]`).addClass("active");
-    //     }
-    //   });
-    // });
+        sections.each(function () {
+          const sectionTop = $(this).offset().top - 100;
+          const sectionBottom = sectionTop + $(this).outerHeight();
+          const id = $(this).attr("id");
 
-    $(window).on("scroll", function () {
-  const currentScroll = $(this).scrollTop();
-  const sections = $("section");
-  const navLinks = $(".nav-link.nav-text");
+          if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+            navLinks.removeClass("active");
+            $(`.nav-link[href="#${id}"]`).addClass("active");
+            found = true;
+          }
+        });
 
-  let found = false;
-
-  sections.each(function () {
-    const sectionTop = $(this).offset().top - 100;
-    const sectionBottom = sectionTop + $(this).outerHeight();
-    const id = $(this).attr("id");
-
-    if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
-      navLinks.removeClass("active");
-      $(`.nav-link[href="#${id}"]`).addClass("active");
-      found = true;
-    }
-  });
-
-  // If scrolled to the top (before any section), activate Home
-  if (!found && currentScroll < 100) {
-    navLinks.removeClass("active");
-    $('.nav-link[href="#"]').addClass("active"); // Or "#home" if using #home
-  }
-});
-
-
+        // If scrolled to the top (before any section), activate Home
+        if (!found && currentScroll < 100) {
+          navLinks.removeClass("active");
+          $('.nav-link[href="#"]').addClass("active"); // Or "#home" if using #home
+        }
+      });
     });
   </script>
 
