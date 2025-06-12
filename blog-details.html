@@ -143,10 +143,27 @@
 
         <div class="col-lg-3">
           <div class="card sidebar-widget ">
-            <div class="card-body">
-              <h5 class="card-title text-dark">Category</h5>
+            <div class="card-body filter-body">
+              <!-- <h5 class="card-title text-dark">Category</h5> -->
+              <h5 class="card-title text-dark d-flex justify-content-between align-items-center">
+                Category
+                <div class="dropdown">
+                  <i class="fas fa-sliders text-secondary" onclick="toggleFilterDropdown()"
+                    style="cursor: pointer; transform: rotate(90deg);"></i>
+                  <ul id="filterDropdown" class="filter-dropdown d-none">
+                    <li onclick="applyFilter('name')">By Name</li>
+                    <li onclick="applyFilter('date')">By Date</li>
+                    <li onclick="applyFilter('author')">By Author</li>
+                    <li onclick="applyFilter('asc')">Ascending</li>
+                    <li onclick="applyFilter('desc')">Descending</li>
+                  </ul>
+                </div>
+              </h5>
+
+
               <ul class="list-unstyled sidebar-list">
-                <li class="border-bottom pb-2"><a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
+                <li class="border-bottom pb-2" data-name="Design" data-date="2025-06-12" data-author="Puneet">
+                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
                       class="fas fa-angle-right mr-2 icon-rotate"></i>
                     Design</a>
                   <ul class="submenu pl-4">
@@ -154,7 +171,8 @@
                     <li class="pt-1"><a href="#" class="text-secondary">Seconde Design</a></li>
                   </ul>
                 </li>
-                <li class="border-bottom pb-2"><a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
+                <li class="border-bottom pb-2" data-name="Scrapes" data-date="2025-05-28" data-author="Aditya">
+                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
                       class="fas fa-angle-right mr-2 icon-rotate"></i>
                     Scrapes</a>
                   <ul class="submenu pl-4">
@@ -162,7 +180,8 @@
                     <li class="pt-1"><a href="#" class="text-secondary">Seconde Scrapes</a></li>
                   </ul>
                 </li>
-                <li class="border-bottom pb-2"><a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
+                <li class="border-bottom pb-2" data-name="Real Estate" data-date="2025-06-03" data-author="Shikhar">
+                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
                       class="fas fa-angle-right mr-2 icon-rotate"></i>
                     Real Estate</a>
                   <ul class="submenu pl-4">
@@ -170,7 +189,8 @@
                     <li class="pt-1"><a href="#" class="text-secondary">Seconde Real Estate</a></li>
                   </ul>
                 </li>
-                <li class="border-bottom pb-2"><a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
+                <li class="border-bottom pb-2" data-name="News" data-date="2025-04-15" data-author="Puneet">
+                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
                       class="fas fa-angle-right mr-2 icon-rotate"></i>
                     News</a>
                   <ul class="submenu pl-4">
@@ -178,7 +198,8 @@
                     <li class="pt-1"><a href="#" class="text-secondary">Seconde News</a></li>
                   </ul>
                 </li>
-                <li class="border-bottom pb-2"><a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
+                <li class="border-bottom pb-2" data-name="Ban" data-date="2025-05-12" data-author="Aditya">
+                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
                       class="fas fa-angle-right mr-2 icon-rotate"></i>
                     Ban</a>
                   <ul class="submenu pl-4">
@@ -186,7 +207,8 @@
                     <li class="pt-1"><a href="#" class="text-secondary">Seconde Ban</a></li>
                   </ul>
                 </li>
-                <li class="border-bottom pb-2"><a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
+                <li class="border-bottom pb-2" data-name="Web" data-date="2025-06-10" data-author="Shikhar">
+                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
                       class="fas fa-angle-right mr-2 icon-rotate"></i>
                     Web</a>
                   <ul class="submenu pl-4">
@@ -408,5 +430,53 @@
     icon.classList.toggle('open');
   }
 </script>
+
+
+  <!-- filter dropdown -->
+  <script>
+    function toggleFilterDropdown() {
+      const dropdown = document.getElementById('filterDropdown');
+      dropdown.classList.toggle('d-none');
+    }
+
+    function applyFilter(type) {
+      const list = document.querySelector('.sidebar-list');
+      const items = Array.from(list.children);
+
+      const sortedItems = items.sort((a, b) => {
+        if (type === 'name' || type === 'asc') {
+          return a.dataset.name.localeCompare(b.dataset.name);
+        } else if (type === 'desc') {
+          return b.dataset.name.localeCompare(a.dataset.name);
+        } else if (type === 'date') {
+          return new Date(a.dataset.date) - new Date(b.dataset.date);
+        } else if (type === 'author') {
+          return a.dataset.author.localeCompare(b.dataset.author);
+        }
+        return 0;
+      });
+
+      // Clear and re-append sorted list
+      list.innerHTML = '';
+      sortedItems.forEach(item => list.appendChild(item));
+
+      // Close the dropdown
+      document.getElementById('filterDropdown').classList.add('d-none');
+    }
+
+    document.addEventListener('click', function (event) {
+      setTimeout(() => {
+        const dropdown = document.getElementById('filterDropdown');
+        const icon = document.querySelector('.fa-filter');
+        const dropdownContainer = dropdown.parentElement;
+
+        // Only hide if clicked outside of dropdown or filter icon
+        if (!dropdownContainer.contains(event.target)) {
+          dropdown.classList.add('d-none');
+        }
+      }, 100);
+    });
+
+  </script>
 
 </html>
