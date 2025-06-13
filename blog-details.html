@@ -109,9 +109,8 @@
             <div class="card-body">
               <h2 class="h2_heading" id="blog-title"></h2>
               <p class="card-text text-muted small mb-3">
-                <i class="far fa-calendar-alt mr-1"></i> <span id="blog-date"></span> |
-                <i class="far fa-user mr-1 ml-2"></i> <span id="blog-author"></span> |
-                <i class="far fa-comments mr-1 ml-2"></i> <span id="blog-comments"></span>
+                <i class="far fa-calendar-alt mr-1"></i> <span id="blog-date"></span> &nbsp; |
+                <i class="far fa-user mr-1 ml-2"></i> <span id="blog-author"></span>
               </p>
               <p class="text-muted mobile-view" id="blog-text"></p>
             </div>
@@ -120,83 +119,6 @@
         </div>
 
         <div class="col-lg-3">
-          <div class="card sidebar-widget ">
-            <div class="card-body filter-body">
-              <!-- <h5 class="card-title text-dark">Category</h5> -->
-              <h5 class="card-title text-dark d-flex justify-content-between align-items-center">
-                Category
-                <div class="dropdown">
-                  <i class="fas fa-sliders text-secondary" onclick="toggleFilterDropdown()"
-                    style="cursor: pointer; transform: rotate(90deg);"></i>
-                  <ul id="filterDropdown" class="filter-dropdown d-none">
-                    <li onclick="applyFilter('name')">By Name</li>
-                    <li onclick="applyFilter('date')">By Date</li>
-                    <li onclick="applyFilter('author')">By Author</li>
-                    <li onclick="applyFilter('asc')">Ascending</li>
-                    <li onclick="applyFilter('desc')">Descending</li>
-                  </ul>
-                </div>
-              </h5>
-
-
-              <ul class="list-unstyled sidebar-list">
-                <li class="border-bottom pb-2" data-name="Design" data-date="2025-06-12" data-author="Puneet">
-                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
-                      class="fas fa-angle-right mr-2 icon-rotate"></i>
-                    Design</a>
-                  <ul class="submenu pl-4">
-                    <li class="pt-1"><a href="#" class="text-secondary">First Design</a></li>
-                    <li class="pt-1"><a href="#" class="text-secondary">Seconde Design</a></li>
-                  </ul>
-                </li>
-                <li class="border-bottom pb-2" data-name="Scrapes" data-date="2025-05-28" data-author="Aditya">
-                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
-                      class="fas fa-angle-right mr-2 icon-rotate"></i>
-                    Scrapes</a>
-                  <ul class="submenu pl-4">
-                    <li class="pt-1"><a href="#" class="text-secondary">First Scrapes</a></li>
-                    <li class="pt-1"><a href="#" class="text-secondary">Seconde Scrapes</a></li>
-                  </ul>
-                </li>
-                <li class="border-bottom pb-2" data-name="Real Estate" data-date="2025-06-03" data-author="Shikhar">
-                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
-                      class="fas fa-angle-right mr-2 icon-rotate"></i>
-                    Real Estate</a>
-                  <ul class="submenu pl-4">
-                    <li class="pt-1"><a href="#" class="text-secondary">First Real Estate</a></li>
-                    <li class="pt-1"><a href="#" class="text-secondary">Seconde Real Estate</a></li>
-                  </ul>
-                </li>
-                <li class="border-bottom pb-2" data-name="News" data-date="2025-04-15" data-author="Puneet">
-                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
-                      class="fas fa-angle-right mr-2 icon-rotate"></i>
-                    News</a>
-                  <ul class="submenu pl-4">
-                    <li class="pt-1"><a href="#" class="text-secondary">First News</a></li>
-                    <li class="pt-1"><a href="#" class="text-secondary">Seconde News</a></li>
-                  </ul>
-                </li>
-                <li class="border-bottom pb-2" data-name="Ban" data-date="2025-05-12" data-author="Aditya">
-                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
-                      class="fas fa-angle-right mr-2 icon-rotate"></i>
-                    Ban</a>
-                  <ul class="submenu pl-4">
-                    <li class="pt-1"><a href="#" class="text-secondary">First Ban</a></li>
-                    <li class="pt-1"><a href="#" class="text-secondary">Seconde Ban</a></li>
-                  </ul>
-                </li>
-                <li class="border-bottom pb-2" data-name="Web" data-date="2025-06-10" data-author="Shikhar">
-                  <a href="#" class="text-secondary" onclick="toggleSubMenu(event)"><i
-                      class="fas fa-angle-right mr-2 icon-rotate"></i>
-                    Web</a>
-                  <ul class="submenu pl-4">
-                    <li class="pt-1"><a href="#" class="text-secondary">First Web</a></li>
-                    <li class="pt-1"><a href="#" class="text-secondary">Seconde Web</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
 
           <div class="card sidebar-widget ">
             <div class="card-body">
@@ -219,7 +141,7 @@
               <h5 class="card-title text-dark">Recent Posts</h5>
               <ul class="list-unstyled recent-posts-list">
                 <li>
-                  <a href="#blogDetails" class="d-flex mb-3 recent-card">
+                  <a href="blog-details.html?id=blog1" class="d-flex mb-3 recent-card">
                     <img src="./assets/Rp_1.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
                       <p class="mb-0 text-dark font-weight-bold">Buying Your First Home in Lucknow? Here’s What You Should Know in 2025</p>
@@ -228,7 +150,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex recent-card mb-3"> <img
+                  <a href="blog-details.html?id=blog2" class="d-flex recent-card mb-3">
+                    <img
                       src="./assets/Rp_2.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
                       <p class="mb-0 text-dark font-weight-bold">Hidden Costs in Homebuying: What No One Tells You About</p>
@@ -237,7 +160,8 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex recent-card mb-3"><img src="./assets/Rp_3.png"
+                  <a href="blog-details.html?id=blog3" class="d-flex recent-card mb-3">
+                    <img src="./assets/Rp_3.png"
                       alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
                       <p class="mb-0 text-dark font-weight-bold">Rental Income or Long-Term Appreciation? Picking the Right Real Estate Strategy</p>
@@ -246,8 +170,9 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex recent-card mb-3"> <img
-                      src="./assets/Rp_4.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
+                  <a href="blog-details.html?id=blog4" class="d-flex recent-card mb-3">
+                    <img src="./assets/Rp_4.png"
+                      alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
                       <p class="mb-0 text-dark font-weight-bold">Understanding RERA in Simple Terms – What Every Buyer Should Know</p>
                       <small class="text-muted">June 10, 2025</small>
@@ -255,20 +180,22 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex recent-card mb-3"> <img
-                      src="./assets/Rp_3.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
+                  <a href="blog-details.html?id=blog5" class="d-flex recent-card mb-3">
+                    <img src="./assets/Rp_1.png"
+                      alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
-                      <p class="mb-0 text-dark  font-weight-bold">Can’t Visit the Site? A Guide to Buying Property Remotely in Lucknow</p>
-                      <small class="text-muted"> June 09, 2025</small>
+                      <p class="mb-0 text-dark font-weight-bold">Can’t Visit the Site? A Guide to Buying Property Remotely in Lucknow</p>
+                      <small class="text-muted">June 9, 2025</small>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex recent-card"> <img src="./assets/Rp_4.png"
+                  <a href="blog-details.html?id=blog6" class="d-flex recent-card mb-3">
+                    <img src="./assets/Rp_2.png"
                       alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
                       <p class="mb-0 text-dark font-weight-bold">How Much Loan Can You Get in 2025? Factors That Decide Your Amount</p>
-                      <small class="text-muted">June 08, 2025</small>
+                      <small class="text-muted">June 8, 2025</small>
                     </div>
                   </a>
                 </li>
@@ -368,7 +295,6 @@
         blogImage: "./assets/blog_details.png",
         date: "june 13, 2025",
         author: "Admin",
-        comments: "122",
         text: `For anyone taking their first step into the world of homeownership, the process can feel both thrilling and overwhelming. And if you’re doing it in Lucknow — a city that beautifully balances cultural heritage with rapid modern growth — the experience comes with unique advantages and important considerations.
         <br>
         <br>
@@ -403,7 +329,6 @@
         blogImage: "./assets/blog_details.png",
         date: "june 12, 2025",
         author: "Admin",
-        comments: "90",
         text: `Buying a home is often one of the biggest financial decisions in a person’s life — especially in a growing market like Lucknow. Most first-time buyers, understandably, focus on the property’s price tag — the base cost per square foot, the total carpet area, and how it fits into their budget. But what many don’t realise until it’s too late is how much more they’ll end up spending beyond that “advertised” figure.
         <br>
         <br>
@@ -444,7 +369,6 @@
         blogImage: "./assets/blog_details.png",
         date: "june 11, 2025",
         author: "Admin",
-        comments: "228",
         text: `Every investor, sooner or later, finds themselves at a crossroads: should I buy this property for <span style="font-weight: 600; color: #2f2f2f;">rental returns</span> or for <span style="font-weight: 600; color: #2f2f2f;">long-term value appreciation</span>? The question seems simple, but the answer depends on your goals, risk appetite, and the dynamics of the city you’re investing in. In Lucknow — a market that’s quietly maturing with every passing year — this decision is especially relevant.
         <br>
         <br>
@@ -485,7 +409,6 @@
         blogImage: "./assets/blog_details.png",
         date: "june 10, 2025",
         author: "Admin",
-        comments: "85",
         text: `Back in the day, buying property in India often felt like a leap of faith. Builders could delay projects for years, change floor plans, or even vanish after collecting most of the money. Homebuyers had little recourse and almost no protection. But that changed in 2016, when the <span style="font-weight: 600; color: #2f2f2f;">Real Estate (Regulation and Development) Act</span>, or <span style="font-weight: 600; color: #2f2f2f;">RERA</span>, came into existence. And since then, it has quietly reshaped the way real estate works in cities like Lucknow — bringing more accountability, transparency, and peace of mind.
         <br>
         <br>
@@ -520,7 +443,6 @@
         blogImage: "./assets/blog_details.png",
         date: "june 9, 2025",
         author: "Admin",
-        comments: "175",
         text: `Imagine trying to buy your dream home or a solid investment property in Lucknow — without ever stepping foot on the site. Just a few years ago, this would’ve sounded ridiculous, even reckless. But today, with better technology, improved transparency, and professional on-ground partners, <span style="font-weight: 600; color: #2f2f2f;">remote property buying</span> is not only possible — it’s becoming surprisingly common.
         <br>
         <br>
@@ -558,7 +480,6 @@
         blogImage: "./assets/blog_details.png",
         date: "june 8, 2025",
         author: "Admin",
-        comments: "135",
         text: `Every homebuyer, whether they admit it or not, has one burning question at the back of their mind: <span style="font-weight: 600; color: #2f2f2f;">“How much loan am I actually eligible for?”</span> It’s the make-or-break figure that decides everything — the size of your flat, the location you can afford, the builder you can talk to, and even how quickly you need to act. And while banks and agents throw around pre-approved numbers casually, the real eligibility amount in 2025 is shaped by more than just your salary.
         <br>
         <br>
@@ -604,7 +525,6 @@
       document.getElementById('blog-date').innerHTML = item.date;
       document.getElementById('blog-author').innerHTML = item.author;
       document.getElementById('blog-text').innerHTML = item.text;
-      document.getElementById('blog-comments').innerHTML = item.comments;
     } else {
       document.getElementById('details-content').innerHTML = `<p class="text-danger">Invalid content ID.</p>`;
     }
@@ -636,66 +556,6 @@
     }
   </script>
 
-
-  <!-- toggle category -->
-  <script>
-    function toggleSubMenu(event) {
-      event.preventDefault();
-      const link = event.currentTarget;
-      const icon = link.querySelector('.icon-rotate');
-      const submenu = link.parentElement.querySelector('.submenu');
-
-      submenu.classList.toggle('open');
-      icon.classList.toggle('open');
-    }
-  </script>
-
-  <!-- filter dropdown -->
-  <script>
-    function toggleFilterDropdown() {
-      const dropdown = document.getElementById('filterDropdown');
-      dropdown.classList.toggle('d-none');
-    }
-
-    function applyFilter(type) {
-      const list = document.querySelector('.sidebar-list');
-      const items = Array.from(list.children);
-
-      const sortedItems = items.sort((a, b) => {
-        if (type === 'name' || type === 'asc') {
-          return a.dataset.name.localeCompare(b.dataset.name);
-        } else if (type === 'desc') {
-          return b.dataset.name.localeCompare(a.dataset.name);
-        } else if (type === 'date') {
-          return new Date(a.dataset.date) - new Date(b.dataset.date);
-        } else if (type === 'author') {
-          return a.dataset.author.localeCompare(b.dataset.author);
-        }
-        return 0;
-      });
-
-      // Clear and re-append sorted list
-      list.innerHTML = '';
-      sortedItems.forEach(item => list.appendChild(item));
-
-      // Close the dropdown
-      document.getElementById('filterDropdown').classList.add('d-none');
-    }
-
-    document.addEventListener('click', function (event) {
-      setTimeout(() => {
-        const dropdown = document.getElementById('filterDropdown');
-        const icon = document.querySelector('.fa-filter');
-        const dropdownContainer = dropdown.parentElement;
-
-        // Only hide if clicked outside of dropdown or filter icon
-        if (!dropdownContainer.contains(event.target)) {
-          dropdown.classList.add('d-none');
-        }
-      }, 100);
-    });
-
-  </script>
 
 </body>
 </html>
