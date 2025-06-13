@@ -102,40 +102,18 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-9" id="blogDetails">
-          <div class="card blog-post-card mb-4 border ">
+          <div class="card blog-post-card mb-4 border" id="details-content">
             <div class="card-main-img">
-              <img src="./assets/blog_details.png" class="img-fluid rounded" alt="Modern House">
+              <img id="blog-image" src="" class="img-fluid rounded" alt="Modern House">
             </div>
             <div class="card-body">
-              <h2 class="h2_heading">Real Estate News</h2>
+              <h2 class="h2_heading" id="blog-title"></h2>
               <p class="card-text text-muted small mb-3">
-                <i class="far fa-calendar-alt mr-1"></i> Apr 14, 2023 |
-                <i class="far fa-user mr-1 ml-2"></i> Admin |
-                <i class="far fa-comments mr-1 ml-2"></i> 122
+                <i class="far fa-calendar-alt mr-1"></i> <span id="blog-date"></span> |
+                <i class="far fa-user mr-1 ml-2"></i> <span id="blog-author"></span> |
+                <i class="far fa-comments mr-1 ml-2"></i> <span id="blog-comments"></span>
               </p>
-              <p class="text-muted mobile-view">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
-              </p>
-              <p class="text-muted mobile-view">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt.
-              </p>
-              <p class="text-muted mobile-view">
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-                aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel
-                eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-              </p>
+              <p class="text-muted mobile-view" id="blog-text"></p>
             </div>
           </div>
 
@@ -241,56 +219,56 @@
               <h5 class="card-title text-dark">Recent Posts</h5>
               <ul class="list-unstyled recent-posts-list">
                 <li>
-                  <a href="#blogDetails" class="d-flex align-items-center mb-3 recent-card">
-                    <img src="./assets/Rp_1.png" alt="Recent Post Thumbnail" class="mr-2 rounded">
+                  <a href="#blogDetails" class="d-flex mb-3 recent-card">
+                    <img src="./assets/Rp_1.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
-                      <p class="mb-0 text-dark font-weight-bold">Demo Post Title</p>
-                      <small class="text-muted">May 12, 2023</small>
+                      <p class="mb-0 text-dark font-weight-bold">Buying Your First Home in Lucknow? Here’s What You Should Know in 2025</p>
+                      <small class="text-muted">June 13, 2025</small>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex align-items-center recent-card mb-3"> <img
-                      src="./assets/Rp_2.png" alt="Recent Post Thumbnail" class="mr-2 rounded">
+                  <a href="#blogDetails" class="d-flex recent-card mb-3"> <img
+                      src="./assets/Rp_2.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
-                      <p class="mb-0 text-dark font-weight-bold">Another Blog Entry</p>
-                      <small class="text-muted">May 10, 2023</small>
+                      <p class="mb-0 text-dark font-weight-bold">Hidden Costs in Homebuying: What No One Tells You About</p>
+                      <small class="text-muted">June 12, 2025</small>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex align-items-center recent-card mb-3"><img src="./assets/Rp_3.png"
-                      alt="Recent Post Thumbnail" class="mr-2 rounded">
+                  <a href="#blogDetails" class="d-flex recent-card mb-3"><img src="./assets/Rp_3.png"
+                      alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
-                      <p class="mb-0 text-dark font-weight-bold">Great Real Estate Tips</p>
-                      <small class="text-muted">May 08, 2023</small>
+                      <p class="mb-0 text-dark font-weight-bold">Rental Income or Long-Term Appreciation? Picking the Right Real Estate Strategy</p>
+                      <small class="text-muted">June 11, 2025</small>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex align-items-center recent-card mb-3"> <img
-                      src="./assets/Rp_4.png" alt="Recent Post Thumbnail" class="mr-2 rounded">
+                  <a href="#blogDetails" class="d-flex recent-card mb-3"> <img
+                      src="./assets/Rp_4.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
-                      <p class="mb-0 text-dark font-weight-bold">Great Real Estate Tips</p>
-                      <small class="text-muted">May 08, 2023</small>
+                      <p class="mb-0 text-dark font-weight-bold">Understanding RERA in Simple Terms – What Every Buyer Should Know</p>
+                      <small class="text-muted">June 10, 2025</small>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex align-items-center recent-card mb-3"> <img
-                      src="./assets/Rp_3.png" alt="Recent Post Thumbnail" class="mr-2 rounded">
+                  <a href="#blogDetails" class="d-flex recent-card mb-3"> <img
+                      src="./assets/Rp_3.png" alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
-                      <p class="mb-0 text-dark  font-weight-bold">Great Real Estate Tips</p>
-                      <small class="text-muted">May 08, 2023</small>
+                      <p class="mb-0 text-dark  font-weight-bold">Can’t Visit the Site? A Guide to Buying Property Remotely in Lucknow</p>
+                      <small class="text-muted"> June 09, 2025</small>
                     </div>
                   </a>
                 </li>
                 <li>
-                  <a href="#blogDetails" class="d-flex align-items-center recent-card"> <img src="./assets/Rp_4.png"
-                      alt="Recent Post Thumbnail" class="mr-2 rounded">
+                  <a href="#blogDetails" class="d-flex recent-card"> <img src="./assets/Rp_4.png"
+                      alt="Recent Post Thumbnail" class="mr-2 mt-2 rounded">
                     <div>
-                      <p class="mb-0 text-dark font-weight-bold">Great Real Estate Tips</p>
-                      <small class="text-muted">May 08, 2023</small>
+                      <p class="mb-0 text-dark font-weight-bold">How Much Loan Can You Get in 2025? Factors That Decide Your Amount</p>
+                      <small class="text-muted">June 08, 2025</small>
                     </div>
                   </a>
                 </li>
@@ -379,6 +357,263 @@
     AOS.init(); // Initialize AOS animations
   </script>
 
+
+
+
+  <!-- dynamic content -->
+  <script>
+    const content = {
+      blog1: {
+        title: "Buying Your First Home in Lucknow? Here’s What You Should Know in 2025",
+        blogImage: "./assets/blog_details.png",
+        date: "june 13, 2025",
+        author: "Admin",
+        comments: "122",
+        text: `For anyone taking their first step into the world of homeownership, the process can feel both thrilling and overwhelming. And if you’re doing it in Lucknow — a city that beautifully balances cultural heritage with rapid modern growth — the experience comes with unique advantages and important considerations.
+        <br>
+        <br>
+        Lucknow in 2025 isn’t the same city it was even five years ago. With the rise of integrated townships, improved road and metro infrastructure, and a new wave of developers entering the market, first-time buyers now have more choices than ever before. But more choice also means more complexity — and this is where informed decision-making becomes key.
+        <br>
+        <br>
+        The first thing to address, always, is your budget. Most people only consider the base price of a home while browsing through options, but the true cost goes far beyond that. There’s GST to account for in under-construction properties, stamp duty and registration charges which can range from 6% to 7%, maintenance deposits, car parking, and occasionally preferred location charges — all of which can increase your total outlay by several lakhs. Setting your financial limit early, with some margin for these extras, makes the entire process more stable.
+        <br>
+        <br>
+        Then comes the decision of where in Lucknow you want to live. Areas like Gomti Nagar Extension, Amar Shaheed Path, Sushant Golf City, and Sultanpur Road have emerged as high-potential zones for first-time homebuyers — offering a mix of infrastructure, safety, and access to daily conveniences. These aren’t just “upcoming” areas anymore; they’re already shaping the next phase of urban living in the city. However, you must be cautious — many fringe localities with attractive pricing lack the civic development or legal clarity you’ll need for long-term comfort.
+        <br>
+        <br>
+        Which brings us to one of the most crucial aspects: builder credibility. In 2025, while RERA does protect buyers to a large extent, many people still fall into the trap of flashy marketing and deep discounts from lesser-known developers. A well-known builder with a clean delivery record may cost a little more upfront, but the peace of mind and legal safety you get in return is worth every rupee. Always verify the RERA registration of any project you're considering, and don’t hesitate to ask questions about delivery timelines, past projects, and approvals.
+        <br>
+        <br>
+        One thing many first-time buyers overlook is how a property will actually fit into their day-to-day life. A site might look impressive on a brochure or even in person, but what about during the monsoon season? Is there water logging? Is public transport easily accessible? Are schools, grocery stores, hospitals, and parks nearby? The house you buy isn’t just a financial investment — it’s where life will happen. Think beyond the walls and into the lifestyle.
+        <br>
+        <br>
+        Equally important is your readiness for home financing. Getting a home loan approved isn’t just about income — it’s about documentation, credit history, employment type, and how efficiently you work with your bank or lending partner. A CIBIL score above 700 is usually a good starting point, and having two to three years of financial records (whether salaried or self-employed) will give you an edge. In many cases, real estate consultants — like BRICKKLY — can simplify this process by directly working with banking partners to speed up approvals and handle the paperwork.
+        <br>
+        <br>
+        A word of caution: never underestimate the hidden costs. What starts as a ₹45 lakh base price can easily become ₹52–54 lakh once all additional charges are included. These surprises can be emotionally and financially draining if you’re not prepared. Make it a point to always request an all-inclusive cost sheet, and don’t sign anything until every rupee is accounted for.
+        <br>
+        <br>
+        Lastly, don’t try to do everything on your own. In today’s market, where so many elements are interconnected — location, legality, loan, possession timelines, resale potential — working with a structured, transparent real estate partner isn’t just smart, it’s essential. At BRICKKLY, we don’t just help you find a property. We guide you through every single stage — from discovery and documentation to loan coordination, possession, and even future resale. You get one point of contact, no random listings, and no running around.
+        <br>
+        <br>
+        Your first home in Lucknow isn’t just a purchase. It’s the foundation of a new chapter. And with the right guidance, that chapter can begin with confidence, clarity, and peace of mind.`,
+      },
+      blog2: {
+        title: "Hidden Costs in Homebuying: What No One Tells You About",
+        blogImage: "./assets/blog_details.png",
+        date: "june 12, 2025",
+        author: "Admin",
+        comments: "90",
+        text: `Buying a home is often one of the biggest financial decisions in a person’s life — especially in a growing market like Lucknow. Most first-time buyers, understandably, focus on the property’s price tag — the base cost per square foot, the total carpet area, and how it fits into their budget. But what many don’t realise until it’s too late is how much more they’ll end up spending beyond that “advertised” figure.
+        <br>
+        <br>
+        The truth is, the actual cost of buying a home is rarely what it looks like on a billboard. There are a number of additional charges — some official, some situational, and some simply unspoken — that can push your budget significantly if you aren’t prepared. These aren’t always hidden maliciously, but they’re rarely explained upfront unless you’re working with someone who values transparency.
+        <br>
+        <br>
+        One of the biggest hidden expenses is <span style="font-weight: 600; color: #2f2f2f;">government charges</span>, particularly <span style="font-weight: 600; color: #2f2f2f;">stamp duty and registration fees</span>. In Uttar Pradesh, stamp duty can go up to 6–7% of the total transaction value, and this amount has to be paid before your property is legally yours. For a property worth ₹50 lakhs, that’s another ₹3.5 lakhs straight away — something not included in the “price” most builders or websites mention.
+        <br>
+        <br>
+        Another major cost, especially in under-construction projects, is <span style="font-weight: 600; color: #2f2f2f;">GST (Goods and Services Tax)</span>. If you're buying a flat that's still being built, you're liable to pay 5% GST on the property value. For affordable housing (defined by the government), this is slightly lower, but it still adds a notable chunk to your final bill. Often, this is only mentioned during the booking stage, leaving buyers scrambling to arrange additional funds.
+        <br>
+        <br>
+        Then come the <span style="font-weight: 600; color: #2f2f2f;">Preferred Location Charges (PLC)</span>. This one surprises a lot of people. You liked the corner flat with more sunlight? Or the one facing the park? Or one on the middle floors for convenience? Chances are, you’ll be paying extra — sometimes ₹100–₹300 per square foot — just for that “preferred” location within the same project. For a 1000 sq. ft. flat, this could add ₹1–₹3 lakhs without you realising it at first glance.
+        <br>
+        <br>
+        <span style="font-weight: 600; color: #2f2f2f;">Parking</span> is another area where buyers are often caught off guard. While many assume that a parking slot comes with the house, the reality is that most developers charge separately for car parking. This can be anywhere between ₹1.5 lakhs to ₹3 lakhs in Lucknow’s mid-range and premium projects, and it's almost always mandatory if you own a vehicle — whether you use the space or not.
+        <br>
+        <br>
+        If you’re buying in a gated community or apartment complex, expect <span style="font-weight: 600; color: #2f2f2f;">maintenance deposits</span> and <span style="font-weight: 600; color: #2f2f2f;">clubhouse membership fees</span>. Developers typically ask for one to two years’ maintenance charges in advance, covering services like cleaning, security, landscaping, and upkeep of common areas. In larger societies, you might also be asked to pay a one-time clubhouse or amenities usage fee, especially if the project has a pool, gym, or event hall. These costs, though not massive individually, add up to ₹50,000–₹1 lakh or more.
+        <br>
+        <br>
+        Then there are <span style="font-weight: 600; color: #2f2f2f;">legal and documentation charges</span>, often underestimated or completely forgotten. From agreement drafting and sale deed registration to lawyer consultation (which is highly recommended), these tasks require professionals — and they don’t come cheap. Some developers include these in their overall package, but most don’t. If you don’t factor these in, the last leg of your purchase journey can become more stressful than it should be.
+        <br>
+        <br>
+        Another silent cost is related to <span style="font-weight: 600; color: #2f2f2f;">home loans</span>. While it might feel like your bank is doing you a favour by sanctioning a loan, remember that there are <span style="font-weight: 600; color: #2f2f2f;">loan processing fees</span>,<span style="font-weight: 600; color: #2f2f2f;"> legal and valuation charges</span>, and <span style="font-weight: 600; color: #2f2f2f;">insurance bundles</span> that are subtly added during disbursal. These aren’t enormous individually, but together, they can cross ₹50,000 depending on your loan size. And if you choose to prepay the loan later, check the fine print — some banks charge a fee for that too.
+        <br>
+        <br>
+        And finally, there’s the cost of <span style="font-weight: 600; color: #2f2f2f;">time and energy</span> — especially if you're not working with the right partner. Chasing site visits, clarifying documents, running between lawyers, banks, and builder offices — these are the intangible costs that can drain your enthusiasm and delay decision-making. A trusted advisor who handles these moving parts for you isn't a luxury, it's a necessity in today's property landscape.
+        <br>
+        <br>
+        At BRICKKLY, we believe the smartest investment is a well-informed one. Our approach ensures every cost — right from the first visit to the final registry — is explained and accounted for. No shocks. No vague estimates. Just a clear path from your budget to your doorstep.
+        <br>
+        <br>
+        Because when it comes to buying a home, it’s not just about what you see on paper. It’s about what no one tells you — and what we make sure you’re never caught off guard by.`,
+      },
+      blog3: {
+        title: "Rental Income or Long-Term Appreciation? Picking the Right Real Estate Strategy",
+        blogImage: "./assets/blog_details.png",
+        date: "june 11, 2025",
+        author: "Admin",
+        comments: "228",
+        text: `Every investor, sooner or later, finds themselves at a crossroads: should I buy this property for <span style="font-weight: 600; color: #2f2f2f;">rental returns</span> or for <span style="font-weight: 600; color: #2f2f2f;">long-term value appreciation</span>? The question seems simple, but the answer depends on your goals, risk appetite, and the dynamics of the city you’re investing in. In Lucknow — a market that’s quietly maturing with every passing year — this decision is especially relevant.
+        <br>
+        <br>
+        Let’s begin with the rental route. If your objective is steady monthly income, then buying a property in a location with high rental demand makes sense. In Lucknow, this demand is typically centered around areas close to hospitals, universities, coaching hubs, IT parks, and government offices. Gomti Nagar, Aliganj, and parts of Indira Nagar and Vibhuti Khand continue to attract working professionals and students alike. These tenants may not want to buy a home, but they do want a decent rental space — which puts you in a good position as a landlord.
+        <br>
+        <br>
+        But it’s not just about the rent cheque. Renting comes with its own set of responsibilities — maintenance, timely repairs, finding the right tenants, ensuring legal documentation, and, sometimes, chasing late payments. If you have the time, or a good property manager (which BRICKKLY can help arrange), the rental model can offer you predictable cash flow, especially if you’re not relying on resale gains anytime soon.
+        <br>
+        <br>
+        On the other hand, appreciation is a patient game. If you’re buying a property in a developing corridor like Shaheed Path, Sultanpur Road, or parts of Kisan Path — areas where infrastructure is still growing — chances are you won’t see high rental returns immediately. However, if the area is being eyed by big developers, government planning bodies, or upcoming institutions, the value of your property could double or triple in five to ten years. This is where research and timing matter more than anything else.
+        <br>
+        <br>
+        Take for example the way Gomti Nagar Extension has evolved. A few years ago, plots and flats were being sold at prices that now seem laughably low. Today, those same properties have appreciated anywhere between 40% to 70%, depending on builder reputation and proximity to major roads or metro lines. Those who bought with a long view — not tempted by monthly rent, but focused on the area’s future — are sitting on significant wealth today.
+        <br>
+        <br>
+        So how do you decide which strategy is for you?
+        <br>
+        <br>
+        If you’re nearing retirement, or want a second income to support EMIs, rental might be more aligned with your needs. A 2BHK in a well-connected society can fetch anywhere between ₹12,000 to ₹20,000 per month in Lucknow, depending on location and furnishing. That’s money you can count on regularly, especially if your investment is debt-free.
+        <br>
+        <br>
+        But if you’re younger, can wait 5–8 years, and want to build wealth instead of relying on regular payouts, appreciation is the smarter play. It requires more patience and a bit of risk, but the rewards — if you’ve chosen the right project at the right time — can be substantial. And if life circumstances change, you always have the option to shift strategy: a property bought for resale can be rented, and vice versa.
+        <br>
+        <br>
+        One important thing to remember is that the two strategies don’t have to be mutually exclusive. With careful planning, you can create a <span style="font-weight: 600; color: #2f2f2f;">balanced portfolio</span> — one property earning rent and another appreciating quietly. At BRICKKLY, we often advise clients to diversify this way, especially if they’re serious about long-term real estate investing.
+        <br>
+        <br>
+        What makes Lucknow special is that it allows room for both strategies. It’s not Mumbai, where rental yields are low and property prices are astronomical. Nor is it a Tier-3 town, where demand is unpredictable. Lucknow sits comfortably in the middle — offering realistic entry points and room to grow.
+        <br>
+        <br>
+        The real question is not which is better in theory, but which is better for you. Your age, your income stream, your risk appetite, and your goals — these are what define your real estate journey. And with the right guidance, you don’t have to choose blindly.
+        <br>
+        <br>
+        At BRICKKLY, we don’t just help you buy properties — we help you <span style="font-weight: 600; color: #2f2f2f;">plan</span> your investment narrative. Whether you want a second income through rentals or are dreaming of a big resale five years down the line, we help you make choices rooted in data, not guesswork. Because in real estate, clarity is your biggest asset.`,
+      },   
+      blog4: {
+        title: "Understanding RERA in Simple Terms – What Every Buyer Should Know",
+        blogImage: "./assets/blog_details.png",
+        date: "june 10, 2025",
+        author: "Admin",
+        comments: "85",
+        text: `Back in the day, buying property in India often felt like a leap of faith. Builders could delay projects for years, change floor plans, or even vanish after collecting most of the money. Homebuyers had little recourse and almost no protection. But that changed in 2016, when the <span style="font-weight: 600; color: #2f2f2f;">Real Estate (Regulation and Development) Act</span>, or <span style="font-weight: 600; color: #2f2f2f;">RERA</span>, came into existence. And since then, it has quietly reshaped the way real estate works in cities like Lucknow — bringing more accountability, transparency, and peace of mind.
+        <br>
+        <br>
+        But what exactly is RERA, and why should you care?
+        <br>
+        <br>
+        Think of RERA as the rulebook that every real estate developer and agent must now follow. It’s a regulatory framework that exists to protect <span style="font-weight: 600; color: #2f2f2f;">you</span>, the buyer. Whether you’re purchasing your first 2BHK in Gomti Nagar Extension or investing in a plotted project on Sultanpur Road, RERA ensures that your money is better safeguarded — and that your rights are no longer an afterthought.
+        <br>
+        <br>
+        The first and most important thing RERA mandates is <span style="font-weight: 600; color: #2f2f2f;">project registration</span>. No builder can advertise or sell a property without first registering the project with the state’s RERA authority. This means submitting every critical document — land titles, approvals, construction plans, financial details — to the government. So when you see a RERA registration number on a project brochure, it’s not just a formality; it’s proof that the project has crossed a basic threshold of legal clearance.
+        <br>
+        <br>
+        Then there’s <span style="font-weight: 600; color: #2f2f2f;">financial discipline</span>. Earlier, it wasn’t uncommon for builders to divert funds from one project to another — causing massive delays. But under RERA, at least <span style="font-weight: 600; color: #2f2f2f;">70% of the amount collected from buyers must be kept in a separate escrow account</span>, and can only be used for the construction and land cost of that same project. This ensures that your payments actually go towards building your future home, not funding some other launch.
+        <br>
+        <br>
+        RERA also makes timelines matter. Developers are now legally bound to complete construction within the promised deadline — or face penalties. If a builder delays possession beyond the agreed date, they are required to <span style="font-weight: 600; color: #2f2f2f;">compensate the buyer</span> with interest for every month of delay. This single provision has changed the game for middle-class families who once spent years paying both rent and EMIs for under-construction flats that never seemed to get completed.
+        <br>
+        <br>
+        Another major benefit is that RERA brings in <span style="font-weight: 600; color: #2f2f2f;">clarity about what you’re getting</span>. No more vague promises or marketing gimmicks. Builders must specify the exact carpet area — not super built-up — and stick to it. They can’t make sudden changes to floor plans or amenities without written consent from a majority of buyers. And if they do, you have the right to withdraw and get your money back.
+        <br>
+        <br>
+        Even more importantly, RERA ensures that there’s now a proper <span style="font-weight: 600; color: #2f2f2f;">grievance redressal mechanism</span>. If you feel cheated, you no longer have to run from pillar to post. You can file a complaint directly with the RERA authority of your state (in this case, <span style="font-weight: 600; color: #2f2f2f;">UP-RERA</span>), and your case will be heard in a dedicated tribunal — often with faster resolution timelines than traditional courts.
+        <br>
+        <br>
+        Now, while all of this sounds great, the truth is many buyers still don’t check for RERA registration. They go by word-of-mouth, flashy brochures, or social media ads — and fall into avoidable traps. That’s why, at BRICKKLY, we don’t touch any property that doesn’t have full legal clarity and valid RERA credentials. We check every document before recommending a project to you, so your decision is not just emotional — it’s backed by regulation.
+        <br>
+        <br>
+        In 2025, buying a home in Lucknow should be safer than ever — but only if you stay informed. RERA isn’t just a buzzword. It’s your <span style="font-weight: 600; color: #2f2f2f;">shield</span>, your <span style="font-weight: 600; color: #2f2f2f;">leverage</span>, and your <span style="font-weight: 600; color: #2f2f2f;">right</span> as a homebuyer. And when you partner with people who respect that, you don’t just buy property — you invest in trust.`,
+      }, 
+      blog5: {
+        title: "Can’t Visit the Site? A Guide to Buying Property Remotely in Lucknow",
+        blogImage: "./assets/blog_details.png",
+        date: "june 9, 2025",
+        author: "Admin",
+        comments: "175",
+        text: `Imagine trying to buy your dream home or a solid investment property in Lucknow — without ever stepping foot on the site. Just a few years ago, this would’ve sounded ridiculous, even reckless. But today, with better technology, improved transparency, and professional on-ground partners, <span style="font-weight: 600; color: #2f2f2f;">remote property buying</span> is not only possible — it’s becoming surprisingly common.
+        <br>
+        <br>
+        At BRICKKLY, we’ve helped NRIs, working professionals from metro cities, and even busy families living just a few districts away buy property confidently in Lucknow without needing to physically visit at every step. Whether you’re in Deoria, Dubai, or Delhi, here’s how it can actually work — if done right.
+        <br>
+        <br>
+        It all starts with <span style="font-weight: 600; color: #2f2f2f;">clarity of intent</span>. Are you looking for an investment with good appreciation potential? Or is this going to be your future home? Maybe you’re buying for your children or parents. The answer to this question will determine everything — the locality, the kind of property, even the builder profile you should consider. The clearer your objective, the more focused your options will be.
+        <br>
+        <br>
+        The next step is <span style="font-weight: 600; color: #2f2f2f;">project shortlisting</span>, and this is where remote buying often fails — if you’re relying only on internet listings or hearsay. Most property portals are filled with outdated or misleading information, and local brokers may not always disclose the full picture. That’s why it helps to work with a team like BRICKKLY — one that does the groundwork, verifies the documents, filters out half-baked projects, and only recommends those that match your goals. We curate options based on actual market trends, construction quality, builder track record, and legal clarity — not just glossy brochures.
+        <br>
+        <br>
+        Once you have a shortlist, comes the <span style="font-weight: 600; color: #2f2f2f;">virtual walkthrough</span> stage. A good walkthrough isn’t just about swiping through photos — it’s about giving you a real sense of the layout, the light, the ventilation, the view, and even the feel of the surroundings. We send detailed video walkthroughs (not edited or speeded up), and on request, even arrange <span style="font-weight: 600; color: #2f2f2f;">live video calls from the site</span> — so you can ask questions in real time, look around, and understand what exactly you’re getting. We also show you what’s outside the gate — road connectivity, market distance, upcoming developments — because that’s often what makes or breaks a decision.
+        <br>
+        <br>
+        Then comes the all-important part: <span style="font-weight: 600; color: #2f2f2f;">legal due diligence</span>. When you’re not on the ground, paperwork and verification become even more crucial. This includes checking the RERA registration, land titles, builder approvals, past delivery record, and checking if the unit is mortgage-free (in case of resale). We loop in legal professionals to ensure every step is clean and compliant. If you’re buying under loan, we even help coordinate with banks for legal and technical clearance.
+        <br>
+        <br>
+        One of the biggest concerns remote buyers have is — “Who’s representing my interest?” At BRICKKLY, we assign a <span style="font-weight: 600; color: #2f2f2f;">dedicated relationship manager</span> who becomes your eyes and ears on ground. They track construction progress, help with booking formalities, coordinate with the builder, assist with agreement signings, and even manage possession formalities if you’re not available.
+        <br>
+        <br>
+        And in cases where physical presence is absolutely necessary — for example, property registration — we help you navigate <span style="font-weight: 600; color: #2f2f2f;">Power of Attorney (PoA)</span> or <span style="font-weight: 600; color: #2f2f2f;">authorized representative documentation</span>, so your trusted family member or friend can legally complete the process on your behalf.
+        <br>
+        <br>
+        Remote property buying isn’t just a convenience anymore — it’s a necessity in a time when many buyers don’t live in the cities they invest in. Lucknow’s real estate market, with its mix of affordable housing, growing infrastructure, and high rental demand, is attracting interest from all across Purvanchal and beyond. But to invest safely from a distance, you need a partner who brings you ground reality — not just brochure dreams.
+        <br>
+        <br>
+        At BRICKKLY, we’ve helped dozens of buyers close deals <span style="font-weight: 600; color: #2f2f2f;">without ever visiting the site themselves</span>, and they’ve taken possession of exactly what was promised. With the right mix of digital tools and real-world support, we make remote buying feel as secure and smooth as buying in your own backyard.
+        <br>
+        <br>
+        Because for us, distance should never come in the way of good decisions.`,
+      },
+      blog6: {
+        title: "How Much Loan Can You Get in 2025? Factors That Decide Your Amount",
+        blogImage: "./assets/blog_details.png",
+        date: "june 8, 2025",
+        author: "Admin",
+        comments: "135",
+        text: `Every homebuyer, whether they admit it or not, has one burning question at the back of their mind: <span style="font-weight: 600; color: #2f2f2f;">“How much loan am I actually eligible for?”</span> It’s the make-or-break figure that decides everything — the size of your flat, the location you can afford, the builder you can talk to, and even how quickly you need to act. And while banks and agents throw around pre-approved numbers casually, the real eligibility amount in 2025 is shaped by more than just your salary.
+        <br>
+        <br>
+        Let’s break it down like you were sitting with us at BRICKKLY over a cup of tea.
+        <br>
+        <br>
+        First things first, the biggest factor is <span style="font-weight: 600; color: #2f2f2f;">your income</span> — but not just in absolute numbers. Banks now look at your income-to-expense ratio, consistency of earnings, and in many cases, the stability of your employment. If you're a salaried employee working with a government department or a reputed private firm, lenders tend to view your profile as lower risk. That often translates into better loan terms and up to <span style="font-weight: 600; color: #2f2f2f;">80–85% of the property value</span> in funding. But if you're self-employed — say a trader in Aminabad or a mid-scale businessman from Ballia — then the bank might want to see two or three years of solid ITRs, bank statements, and a clear track of business cash flow.
+        <br>
+        <br>
+        Your <span style="font-weight: 600; color: #2f2f2f;">age</span> is another key component. If you're in your late 20s or early 30s, you might be eligible for a longer loan tenure — say 25–30 years — which means lower EMIs and a higher loan amount. But someone nearing retirement age will likely get a shorter tenure, automatically reducing the loan size. Most banks prefer the loan to end by the time the borrower turns 60–65, so younger buyers have a natural edge.
+        <br>
+        <br>
+        Then comes the ever-critical <span style="font-weight: 600; color: #2f2f2f;">credit score</span>. In 2025, a CIBIL score of 750 or above is considered healthy. But what many don’t realise is that your loan limit doesn’t just depend on whether you’re eligible — it depends on how strongly you score. A score of 800+ might not only fetch you higher amounts but could also unlock better interest rates and faster approvals. We often recommend clients to check their credit reports early in the property hunt — not at the last minute — so they have time to fix errors or clear minor dues.
+        <br>
+        <br>
+        But even with great income and credit, one silent killer can be <span style="font-weight: 600; color: #2f2f2f;">existing liabilities</span>. Already paying a car EMI or an earlier home loan? Those amounts directly reduce your eligibility. In fact, banks typically use a thumb rule — your total monthly EMI obligations (including the new home loan) should not exceed <span style="font-weight: 600; color: #2f2f2f;">40–50% of your net monthly income</span>. So if you earn ₹80,000 monthly and already pay ₹10,000 in other EMIs, your new home loan EMI must fit comfortably within ₹30,000–₹35,000.
+        <br>
+        <br>
+        Another often-overlooked factor is the <span style="font-weight: 600; color: #2f2f2f;">type of property</span> you’re buying. Banks are more generous with loans on RERA-approved, builder-floor, or ready-to-move flats from reputed developers in approved townships. They may offer lower loan-to-value (LTV) for independent plots, under-construction units from unknown builders, or rural properties — sometimes not going beyond 60–70%. That’s why a property’s legal profile affects how much funding you can access.
+        <br>
+        <br>
+        In Lucknow, we’re also seeing banks becoming extra cautious with fringe or speculative locations. So while a property in Gomti Nagar Extension or Shaheed Path might get full approval, one in an underdeveloped part of Kisan Path might face stricter scrutiny. That’s where BRICKKLY steps in — to guide you toward properties that not only fit your budget but also pass smoothly through bank filters.
+        <br>
+        <br>
+        The good news? In 2025, interest rates have been relatively stable, and digital loan processing has become much faster. With most lenders now offering <span style="font-weight: 600; color: #2f2f2f;">pre-approval in 24–48 hours</span>, buyers who have their documents in order can close deals in record time. Plus, schemes like PMAY for first-time buyers, or special bank tie-ups for specific projects, can offer extra funding or subsidies — if you know where to look.
+        <br>
+        <br>
+        At BRICKKLY, we don’t just help you pick properties — we walk with you through the <span style="font-weight: 600; color: #2f2f2f;">entire loan process</span>. From matching you with the right bank based on your profile to coordinating with documentation teams, legal verifiers, and bank valuers, we ensure your loan isn’t just sanctioned, but sanctioned <span style="font-weight: 600; color: #2f2f2f;">smoothly</span> and <span style="font-weight: 600; color: #2f2f2f;">in time</span>. And because we maintain working relationships with leading lenders in Lucknow, we can often pre-empt hurdles before they even show up.
+        <br>
+        <br>
+        So the next time someone says, “Yaar, bank toh ₹40 lakh hi de raha hai,” remember — it’s not about what they’re offering you. It’s about <span style="font-weight: 600; color: #2f2f2f;">what you qualify for</span>, based on real-world factors. And when you have someone to decode those variables for you, your homebuying journey becomes less about numbers, and more about confidence.`,
+      },
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const blogId = params.get('id');
+    const item = content[blogId];
+
+    if (item) {
+      // Set dynamic content
+      document.getElementById('blog-title').textContent = item.title;
+      document.getElementById('blog-image').src = item.blogImage;
+      document.getElementById('blog-date').innerHTML = item.date;
+      document.getElementById('blog-author').innerHTML = item.author;
+      document.getElementById('blog-text').innerHTML = item.text;
+      document.getElementById('blog-comments').innerHTML = item.comments;
+    } else {
+      document.getElementById('details-content').innerHTML = `<p class="text-danger">Invalid content ID.</p>`;
+    }
+
+  </script>
+
+
+
+
   <!-- fixed button on screen -->
   <script>
     function callPhone() {
@@ -414,23 +649,6 @@
       icon.classList.toggle('open');
     }
   </script>
-
-
-</body>
-
-
-<script>
-  function toggleSubMenu(event) {
-    event.preventDefault();
-    const link = event.currentTarget;
-    const icon = link.querySelector('.icon-rotate');
-    const submenu = link.parentElement.querySelector('.submenu');
-
-    submenu.classList.toggle('open');
-    icon.classList.toggle('open');
-  }
-</script>
-
 
   <!-- filter dropdown -->
   <script>
@@ -479,4 +697,5 @@
 
   </script>
 
+</body>
 </html>
