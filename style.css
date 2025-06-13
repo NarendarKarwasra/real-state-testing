@@ -1131,13 +1131,18 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 14px;
+  position: relative;
 }
 
 .testimonial-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
-
+.testimonial-card .quotes{
+  width: 24px;
+  height: 24px;
+}
 .testimonial-card .avatar {
   width: 50px;
   height: 50px;
@@ -1149,9 +1154,10 @@ button:focus {
   color: #1a1a1a;
 }
 .testimonial-card p{
-  text-align: justify;
+  text-align: left;
   height: 76%;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 .testimonial-card h5{
   font-size: 1.1rem;
@@ -1161,8 +1167,6 @@ button:focus {
   margin-bottom: 0;
 }
 .testimonial-author-box{
-  border-top: 1px solid #f5d6d0;
-  padding-top: 20px;
   height: 24%;
 }
 
