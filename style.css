@@ -334,9 +334,9 @@ a:hover {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(0, 14, 37, 0.6), rgba(0, 14, 36, 0.6)),
-    url("./assets/hero.png") no-repeat center center/cover;
+    url("./assets/hero.webp") no-repeat center center/cover;
   /* background: linear-gradient(rgba(65, 43, 43, 0.6), rgba(255, 209, 209, 0.6)),
-    url("./assets/hero.png") no-repeat center center/cover; */
+    url("./assets/hero.webp") no-repeat center center/cover; */
   color: var(--text-light);
   display: flex;
   flex-direction: column;
@@ -1279,7 +1279,7 @@ button:focus {
 
 .about-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./assets/about.png") no-repeat center center/cover;
+    url("./assets/about.webp") no-repeat center center/cover;
   /* Replace with a real image */
   height: 80vh;
   /* Adjust height as needed */
@@ -1401,7 +1401,7 @@ button:focus {
 
 /* Header Section */
 .blog-header {
-  background-image: url("./assets/blog_hero.png");
+  background-image: url("./assets/blog_hero.webp");
   /* Replace with your actual Painted Ladies image */
   background-size: cover;
   background-position: center;
@@ -1436,7 +1436,7 @@ button:focus {
 
 .about-header-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./assets/about_banner.png") !important;
+    url("./assets/about_banner.webp") !important;
   margin-top: 100px;
   color: var(--text-light);
   display: flex;
@@ -1464,7 +1464,7 @@ button:focus {
 
 .blog-header-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./assets/blog_banner.png") no-repeat center center/cover;
+    url("./assets/blog_banner.webp") no-repeat center center/cover;
   margin-top: 100px;
   color: var(--text-light);
   display: flex;
@@ -1477,7 +1477,7 @@ button:focus {
 
 .service-header-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./assets/service_banner.png") no-repeat center center/cover;
+    url("./assets/service_banner.webp") no-repeat center center/cover;
   margin-top: 100px;
   color: var(--text-light);
   display: flex;
@@ -1490,7 +1490,7 @@ button:focus {
 
 .policy-header-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./assets/privacy-banner.jpg") no-repeat center center/cover;
+    url("./assets/privacy-banner.webp") no-repeat center center/cover;
   margin-top: 100px;
   color: var(--text-light);
   display: flex;
