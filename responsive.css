@@ -1,3 +1,30 @@
+@media (max-width: 1200px) {
+    .blob-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+.contact-div {
+    gap: 5px;
+}
+.contact-div button {
+    padding: 8px 14px;
+}
+.contact-div button:hover {
+    background: #D87C6A;
+    color: #fff;
+}
+
+.contact-div button i {
+    font-size: 24px;
+}
+
+
+
+}
+
+
 /* Tablets and below (max-width: 991.98px) */
 @media (max-width: 991.98px) {
   .blog-header {
@@ -171,6 +198,278 @@
     margin-top: 10px;
     margin-bottom: 20px;
   }
+
+
+
+
+
+
+
+
+
+
+  .search-location{
+  width: 28%;
+  height: 40px;
+}
+.search-location-i {
+  font-size: 18px;
+}
+.search-location-input {
+  font-size: 14px;
+}
+.search-tabs {
+  height: 40px;
+}
+.search-tabs .all-tab {
+  width: 52px;
+  font-size: 14px;
+}
+.search-type{
+  width: 17%;
+  height: 40px;
+}
+.more-filter{
+    width: 120px;
+    padding-left: 10px;
+}
+.search-beds .custom-options1 {
+  width: 110%;
+  margin-left: -10%;
+}
+.custom-select-filter {
+  height: 38px;
+}
+
+.custom-options-filter {
+  width: 300%;
+  margin-left: -10%;
+  border-radius: 4px;
+}
+
+.filter-price{
+  padding: 10px;
+}
+.filter-price h2{
+  font-size: 16px;
+}
+.filter-price-selector{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.filter-price-selector input{
+  margin-top: 6px;
+  width: 90%;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.filter-btn-full{
+  gap: 2%;
+  margin-bottom: 10px;
+}
+.form-btn{
+  width: 100px !important;
+}
+
+.filter-clear-left{
+  height: 36px;
+}
+.filter-clear-right{
+  height: 36px;
+}
+
+
+
+
+.content-left {
+    width: 73%;
+}
+
+
+.left-head h2{
+  font-size: 18px;
+}
+.bottom-type {
+  width: 100px;
+  height: 36px;
+}
+.custom-select-list {
+  height: 34px;
+}
+.custom-options-list {
+  width: 150%;
+}
+.custom-options-list li {
+  padding: 6px;
+  height: 36px;
+}
+
+.head-right {
+  height: 36px;
+}
+.head-right .list-tab {
+  width: 6vw;
+  height: 30px;
+  font-size: 14px;
+}
+.list-tab {
+  height: 40px;
+  font-size: 14px;
+}
+.list-tab-i{
+  margin-right: 4px;
+  font-size: 16px;
+}
+
+
+
+.card {
+  margin-top: 14px;
+  border-radius: 6px;
+}
+.card-left {
+  width: 40%;
+}
+.nav-button {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+}
+.heart-icon {
+  font-size: 14px;
+  height: 30px;
+  width: 30px;
+}
+.nav-dots .dot {
+  width: 6px;
+  height: 6px;
+}
+.nav-dots .dot.active {
+  width: 10px;
+  height: 10px;
+}
+
+
+
+ 
+
+
+.card-right{
+  padding: 10px 14px;
+  width: 60%;
+}
+.card-right h2{
+  font-size: 20px;
+}
+.location{
+  font-size: 14px;
+  margin-top: 4px;
+}
+.location i{
+  font-size: 16px;
+}
+.price{
+  margin-top: 12px;
+  font-size: 18px;
+}
+.price span{
+  font-size: 16px;
+}
+.about{
+  gap: 3%;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.about-beds{
+  width: 75px;
+  gap: 8px;
+}
+.about-beds div img{
+  width: 20px;
+}
+.about-area{
+  font-size: 14px;
+}
+.about-area img{
+  width: 16px;
+}
+.feature {
+  display: none;
+}
+.contact-div {
+    gap: 10px;
+    margin-top: 10px;
+}
+.hideOn1000{
+  display: none;
+}
+.contact-div button {
+    padding: 4px 20px;
+}
+.contact-div button i {
+    font-size: 20px;
+    margin-right: 0 !important;
+}
+
+
+
+.pagination {
+  gap: 8px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+
+
+
+    .content-full {
+        margin-top: 20px;
+    }
+    .blob-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    .map-btn button i {
+        font-size: 16px;
+        margin-right: 4px !important;
+    }
+    .alert {
+        border-radius: 4px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .alert p {
+        margin-bottom: 10px;
+    }
+    .alert button {
+        padding: 6px;
+    }
+    .alert button i {
+        font-size: 16px;
+    }
+    .right-extra {
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .right-extra h6 {
+        font-size: 14px;
+    }
+    .right-extra ol {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
 
 
 
@@ -386,7 +685,6 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
     font-family: Arial, sans-serif;
@@ -394,9 +692,10 @@
     color: #333;
     cursor: pointer;
     user-select: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-
+.custom-select {
+    height: 38px;
+}
   .dropdown-selected-value {
     padding: 12px 15px;
     display: flex;
@@ -687,6 +986,199 @@
 
 
 
+
+
+
+
+
+  .search{
+    flex-wrap: wrap;
+}
+.search-location{
+  width: 49%;
+  margin-bottom: 10px;
+}
+.search-tabs {
+  width: 49%;
+  margin-bottom: 10px;
+}
+.search-tabs .all-tab {
+  width: 33.33%;
+  height: 30px;
+}
+.search-type{
+  width: 32%;
+  margin-bottom: 10px;
+}
+.custom-select1 {
+    height: 38px;
+}
+.more-filter{
+    width: 32%;
+}
+.search-beds .custom-options1 {
+  width: 108%;
+  margin-left: -8%;
+}
+.custom-select-filter {
+  height: 38px;
+}
+.custom-options-filter {
+  width: 103%;
+  margin-left: -9%;
+}
+
+
+.filter-price{
+  padding: 10px;
+}
+.filter-price h2{
+  font-size: 16px;
+}
+.filter-price-selector{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.filter-price-selector input{
+  margin-top: 6px;
+  width: 90%;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.filter-btn-full{
+  gap: 2%;
+  margin-bottom: 10px;
+}
+.filter-clear-full{
+  justify-content: center;
+}
+
+.form-btn{
+  display: block;
+}
+
+
+.left-head{
+  flex-direction: column;
+}
+.left-head h2{
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-bottom: 14px;
+}
+.left-head-btn-full{
+  width: 100%;
+}
+.bottom-type {
+  width: 48%;
+  margin-bottom: 0;
+}
+.custom-options-list {
+  width: 106%;
+}
+.custom-options-list li {
+  padding: 10px;
+  height: 38px;
+}
+.head-right {
+  height: 36px;
+  width: 48%;
+}
+.head-right .list-tab {
+  width: 50%;
+  height: 30px;
+}
+
+
+.card-left {
+  width: 50%;
+}
+.nav-button {
+  width: 24px;
+  height: 24px;
+}
+.heart-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.card-right{
+  padding: 4px 8px;
+  width: 50%;
+}
+.card-right h2{
+  font-size: 16px;
+}
+.location i{
+  font-size: 14px;
+}
+.price{
+  margin-top: 8px;
+  font-size: 16px;
+}
+.price span{
+  font-size: 14px;
+}
+.about{
+  margin-top: 6px;
+  flex-direction: column;
+  align-items: start;
+}
+.about span{
+  display: none;
+}
+.about div{
+  margin-bottom: 4px;
+}
+.feature {
+  display: none;
+}
+
+.contact-div {
+    gap: 4px;
+    margin-top: 6px;
+}
+.contact-div button {
+    padding: 4px 16px;
+}
+
+    .content-full {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .content-left {
+        width: 100%;
+    }
+    .content-right {
+        width: 100%;
+    }
+    .map {
+        margin-top: 20px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    .blob-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .map-btn button i {
+        font-size: 16px;
+        margin-right: 4px !important;
+    }
+
+
+
+
+    .filter-clear-right{
+      width: 120px !important;
+    }
+
+
+
+
+
 }
 
 
@@ -914,6 +1406,99 @@
 
 
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+
+    .content-full {
+        margin-top: 10px;
+    }
+    .map {
+        margin-top: 20px;
+        height: 80px;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+    .map-btn button i {
+        font-size: 18px;
+    }
+
+    .contact-div button {
+    padding: 4px 8px;
+}
+
+.search{
+    flex-wrap: wrap;
+}
+.search-location{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.search-tabs {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.search-tabs .all-tab {
+  width: 33.33%;
+}
+.search-type{
+  width: 49%;
+  margin-bottom: 10px;
+}
+.more-filter{
+    width: 100%;
+}
+.search-beds .custom-options1 {
+  width: 108%;
+  margin-left: -8%;
+}
+.custom-select-filter {
+  height: 38px;
+}
+.custom-options-filter {
+  width: 103%;
+  margin-left: -9%;
+}
+
+
+
+
+
+
+
+.filter-price{
+  padding: 10px;
+}
+.filter-price h2{
+  font-size: 16px;
+}
+.filter-price-selector{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.filter-price-selector input{
+  margin-top: 6px;
+  width: 90%;
+  height: 36px;
+  border-radius: 4px;
+}
+
+
+}
+
+
+
+
+
+
 
 /* Larger screens only (min-width: 1501px) */
 @media (min-width: 1501px) {
