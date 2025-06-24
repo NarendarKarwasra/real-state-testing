@@ -201,12 +201,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 6px;
 }
 
 .feature div {
     font-size: 16px;
-    color: #D87C6A;
+    font-weight: 400;
+    color: #aaaaaa;
 }
 
 .contact-div {
