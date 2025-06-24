@@ -63,12 +63,12 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#home">Home</a></li>
+          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="index.html#">Home</a></li>
           <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text active" href="properties.html">Properties</a></li>
-          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#about">About</a></li>
-          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#blog">Blog</a></li>
-          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#services">Services</a></li>
-          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="#enquiry">Enquiry</a></li>
+          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="index.html#about">About</a></li>
+          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="index.html#blog">Blog</a></li>
+          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="index.html#services">Services</a></li>
+          <li class="nav-item mx-2 nav-fade"><a class="nav-link nav-text" href="index.html#enquiry">Enquiry</a></li>
         </ul>
       </div>
     </div>
@@ -102,26 +102,17 @@
 
 <section>
     <div class="container">
+
+      <h3 class="search-heading">Search Properties</h3>
+      <div class="search-top-divider"></div>
+
+      <div class="search-location">
+          <i class="search-location-i fa fa-search"></i>
+          <input class="search-location-input" type="text" placeholder="Find City, Address, Name" />
+          <div class="auto-search">Auto Search</div>
+      </div>
+      
         <div class="search d-flex">
-
-        <div class="search-location">
-            <i class="search-location-i fas fa-map-marker-alt"></i>
-            <input class="search-location-input" type="text" placeholder="Enter Location" />
-        </div>
-
-        <div class="search-tabs">
-            <div class="all-tabs">
-              <input type="radio" name="all-tab" id="all-tab1" checked>
-              <label for="all-tab1" class="all-tab">All</label>
-
-              <input type="radio" name="all-tab" id="all-tab2">
-              <label for="all-tab2" class="all-tab">Off Plan</label>
-
-              <input type="radio" name="all-tab" id="all-tab3">
-              <label for="all-tab3" class="all-tab">Ready</label>
-
-            </div>
-          </div>
 
             <div class="search-type">
                 <div class="custom-dropdown search-custom-dropdown">
@@ -144,10 +135,32 @@
                     </ul>
                   </div>
               </div>
+            
+              <div class="search-type search-area">
+                  <div class="custom-dropdown-area">
+                    <div class="custom-select-area" onclick="toggleDropdownArea()">Arae (sqft)</div>
+                    <ul class="custom-options-area">
+                      <li onclick="selectOptionArea(this)">500-1000</li>
+                      <li onclick="selectOptionArea(this)">1000-2500</li>
+                      <li onclick="selectOptionArea(this)">2500+</li>
+                    </ul>
+                  </div>
+              </div>
+              
+              <div class="search-type search-price">
+                  <div class="custom-dropdown-price">
+                    <div class="custom-select-price" onclick="toggleDropdownPrice()">Price</div>
+                    <ul class="custom-options-price">
+                      <li onclick="selectOptionPrice(this)">Under 1 Cr</li>
+                      <li onclick="selectOptionPrice(this)">1 Cr - 3 Cr</li>
+                      <li onclick="selectOptionPrice(this)">3 Cr+</li>
+                    </ul>
+                  </div>
+              </div>
 
 
 
-            <div class="search-type more-filter">
+            <!-- <div class="search-type more-filter">
                   <div class="custom-dropdown-filter">
                     <div class="custom-select-filter" onclick="toggleDropdownFilter()">More Filters</div>
                     <ul class="custom-options-filter">
@@ -187,25 +200,21 @@
 
                     </ul>
                   </div>
-              </div>
+              </div> -->
+
+            <button class="filter-clear">Clear Filter</button>
               
             </div>
+
+      <div class="search-bottom-divider"></div>
+
     </div>
 </section>
 
 
 
 
-<section>
-    <div class="container">
-        <div class="filter-clear-full">
-              <button class="form-btn filter-clear-left">Clear Filter</button>
-              <button class="form-btn filter-clear-right">Save Search</button>
-            </div>
 
-            <div class="devider"></div>
-    </div>
-</section>
 
 
        
@@ -651,6 +660,7 @@
 
   <script>
     // banner form show options
+    // dropdown for property type filter
 function toggleDropdown() {
   const optionsList = document.querySelector('.custom-options');
   optionsList.classList.toggle('show');
@@ -676,7 +686,7 @@ window.addEventListener('click', function (e) {
 });
 
 
-
+// dropdown for bed and bath filter
 function toggleDropdown1() {
   const optionsList = document.querySelector('.custom-options1');
   optionsList.classList.toggle('show1');
@@ -698,6 +708,58 @@ window.addEventListener('click', function (e) {
   const dropdown = document.querySelector('.custom-dropdown1');
   if (!dropdown.contains(e.target)) {
     document.querySelector('.custom-options1').classList.remove('show1');
+  }
+});
+
+
+// dropdown for arae filter
+function toggleDropdownArea() {
+  const optionsList = document.querySelector('.custom-options-area');
+  optionsList.classList.toggle('show-area');
+}
+
+function selectOptionArea(el) {
+  const selectBox = document.querySelector('.custom-select-area');
+  const options = document.querySelectorAll('.custom-options-area li');
+
+  options.forEach(opt => opt.classList.remove('selected-area'));
+
+  el.classList.add('selected-area');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options-area').classList.remove('show-area');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown-area');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options-area').classList.remove('show-area');
+  }
+});
+
+
+// dropdown for price filter
+function toggleDropdownPrice() {
+  const optionsList = document.querySelector('.custom-options-price');
+  optionsList.classList.toggle('show-price');
+}
+
+function selectOptionPrice(el) {
+  const selectBox = document.querySelector('.custom-select-price');
+  const options = document.querySelectorAll('.custom-options-price li');
+
+  options.forEach(opt => opt.classList.remove('selected-price'));
+
+  el.classList.add('selected-price');
+  selectBox.innerHTML = el.textContent;
+
+  document.querySelector('.custom-options-price').classList.remove('show-price');
+}
+
+window.addEventListener('click', function (e) {
+  const dropdown = document.querySelector('.custom-dropdown-price');
+  if (!dropdown.contains(e.target)) {
+    document.querySelector('.custom-options-price').classList.remove('show-price');
   }
 });
 
