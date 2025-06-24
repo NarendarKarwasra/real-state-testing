@@ -1,7 +1,7 @@
 
 /* properties */
 
-.about-header-banner {
+.search-header-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
     url("./assets/property-banner1.jpg") !important;
   margin-top: 100px;
@@ -1644,6 +1644,11 @@ input#list-tab2:checked~label[for="list-tab2"] {
 @media (max-width: 400px) {
 
     
+  .search-header-banner {
+  margin-top: 100px;
+  height: 450px;
+}
+
     .content-full {
         margin-top: 10px;
     }
