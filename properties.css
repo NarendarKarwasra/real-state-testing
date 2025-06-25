@@ -41,9 +41,9 @@
 
 .search-location{
   border: 1px solid #D1D1D1;
-  border-radius: 40px;
+  border-radius: 4px;
   width: 500px;
-  height: 46px;
+  height: 50px;
   display: flex;
   align-items: center;
   background: #fff;
@@ -52,8 +52,12 @@
 }
 .search-location-i {
   color: #D87C6A;
-  font-size: 18px;
-  margin: 0 20px;
+  font-size: 14px;
+  margin: 0 10px 0 20px;
+}
+.search-i {
+  font-size: 16px;
+  margin: 0 4px 0 0;
 }
 .search-location-input {
   border: none;
@@ -70,14 +74,15 @@
   width: 150px;
   background-color: #D87C6A;
   color: #fff;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   cursor: pointer;
 }
 
@@ -1153,13 +1158,11 @@ input#list-tab2:checked~label[for="list-tab2"] {
 
   .search-location{
   width: 400px;
-  height: 40px;
+  height: 44px;
 }
-.search-location-i {
-  font-size: 18px;
-}
-.search-location-input {
+.search-i {
   font-size: 14px;
+  margin: 0 6px 0 0;
 }
 .auto-search {
   width: 130px;
@@ -1199,7 +1202,7 @@ input#list-tab2:checked~label[for="list-tab2"] {
   height: 38px;
 }
 .filter-clear{
-  height: 38px;
+  height: 40px;
   width: 16% !important;
 }
 
@@ -1432,6 +1435,12 @@ input#list-tab2:checked~label[for="list-tab2"] {
 
 @media (max-width: 700px) {
 
+    
+  .search-header-banner {
+  /* margin-top: 100px; */
+  height: 320px;
+}
+
   .search{
     flex-wrap: wrap;
     justify-content: center;
@@ -1442,17 +1451,24 @@ input#list-tab2:checked~label[for="list-tab2"] {
   margin-bottom: 20px;
 }
 .search-location-input {
-  font-size: 15px;
-  width: calc(100% - 100px);
+  /* font-size: 15px; */
+  width: calc(100% - 60px);
+  height: 40px;
 }
 .auto-search {
-  width: 100px;
-  line-height: 16px;
-  text-align: center;
+  width: 60px;
+  /* text-align: center; */
 }
 .search-location-i {
   font-size: 14px;
-  margin: 0 6px 0 10px;
+  margin: 0 8px 0 14px;
+}
+.search-i {
+  font-size: 16px;
+  margin: 0 4px 0 0;
+}
+.hideOnMobile{
+  display: none;
 }
 .search-tabs {
   width: 49%;
@@ -1643,6 +1659,10 @@ input#list-tab2:checked~label[for="list-tab2"] {
 
 @media (max-width: 400px) {
 
+
+  .search-top-divider{
+  width: 100%;
+}
     
   .search-header-banner {
   margin-top: 100px;
