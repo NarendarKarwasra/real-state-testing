@@ -14,11 +14,11 @@
 }
 
 .name-div h2 {
-    font-size: 35px;
+    font-size: 24px;
 }
 
 .name-div div {
-    margin: 10px 0;
+    margin: 4px 0;
     font-size: 16px;
     color: #8D8D8D;
 }
@@ -33,7 +33,7 @@
     font-weight: 500;
     padding: 8px;
     border: none !important;
-    margin-left: 6px;
+    margin-left: 4px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -49,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .img-section div {
@@ -152,13 +152,13 @@
 }
 
 .price {
-    font-size: 26px;
+    font-size: 20px;
     color: #D87C6A;
     font-weight: 600;
 }
 
 .price span {
-    font-size: 22px;
+    font-size: 18px;
     margin-right: 10px;
     color: #000;
     font-weight: 500;
@@ -167,13 +167,11 @@
 .about {
     display: flex;
     gap: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
-
 .about div {
     display: flex;
     align-items: center;
-
 }
 
 .about div img {
@@ -184,18 +182,12 @@
 .detail a {
     margin-top: 10px;
     color: #D87C6A !important;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     width: fit-content;
     transition: all 0.2s ease-in-out;
-}
-.detail a i {
-    font-size: 14px;
-}
-.detail a:hover {
-    color: #ca4c33 !important;
-}
+} 
 
 .feature {
     display: flex;
@@ -207,36 +199,89 @@
 .feature div {
     font-size: 16px;
     font-weight: 400;
-    color: #aaaaaa;
+    color: #7e7e7e;
 }
+
+
+
+
+
 
 .contact-div {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     margin-top: 20px;
 }
 
-.contact-div button {
-    background: #ffe5df;
+.contact-div .contact-btn-email {
+    background: #D87C6A;
     border: none !important;
     padding: 8px 20px;
     font-size: 16px;
-    font-weight: 500;
-    color: #ca4c33;
+    font-weight: 600;
+    color: #fff;
     display: flex;
     align-items: center;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
-.contact-div button:hover {
-    background: #D87C6A;
+.contact-div .contact-btn-email:hover {
+    background: #8c1d1c;
     color: #fff;
 }
 
 .contact-div button i {
     font-size: 20px;
 }
+
+
+.contact-div .contact-btn-phone {
+    background: #007BFF;
+    border: none !important;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.contact-div .contact-btn-phone:hover {
+    background: #004894;
+    color: #fff;
+}
+.contact-btn-phone i{
+  font-size: 18px !important;
+}
+
+
+.contact-div .contact-btn-whatsapp {
+    background: #25D366;
+    border: none !important;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.contact-div .contact-btn-whatsapp:hover {
+    background: #007d2e;
+    color: #fff;
+}
+.contact-btn-whatsapp i{
+  font-size: 22px !important;
+}
+
+
+
+
 
 
 
@@ -371,7 +416,7 @@
 }
 .tab-btn{
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     height: 46px;
     border-radius: 0;
     border-top: none;
@@ -427,7 +472,7 @@
     justify-content: center;
     gap: 1%;
     width: 30%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .info-single-img{
     width: 10%;
@@ -513,16 +558,20 @@ tr {
 
 }
 .amen-single {
-    padding: 40px 15px;
+    padding: 30px 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     background: #ffe5df;
     border-radius: 6px;
     width: 150px;
     margin-bottom: 2%;
+    transition: all 0.2s ease-in-out;
+}
+.amen-single:hover {
+    background: #eaa395;
 }
 .amen-single-img {
     width: 20px;
