@@ -19,7 +19,7 @@ body {
   /* Warm yellow */
   --secondary-color: #102344;
   /* Deep blue for contrast */
-  --hover-color: #d87c6a;
+  --hover-color: #D49A82;
   /* Muted coral for interactive states */
   --text-dark: #2d2d2d;
   /* Dark gray for readability */
@@ -206,7 +206,7 @@ a:hover {
   left: 0;
   height: 2px;
   width: 0%;
-  background-color: #d87c6a;
+  background-color: #D49A82;
   transition: width 0.2s ease;
 }
 
@@ -336,7 +336,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 14, 37, 0.6), rgba(0, 14, 36, 0.6)),
+  background: linear-gradient(rgba(16, 36, 68, 0.8), rgba(16, 36, 68, 0.8)),
     url("./assets/hero.webp") no-repeat center center/cover;
   /* background: linear-gradient(rgba(65, 43, 43, 0.6), rgba(255, 209, 209, 0.6)),
     url("./assets/hero.webp") no-repeat center center/cover; */
@@ -497,7 +497,7 @@ html {
 .select-options div:hover,
 .select-options div.selected {
   background-color: #e9ecef;
-  color: var(--primary-color);
+  color: var(--hover-color);
   /* Highlight selected/hovered item */
 }
 
@@ -523,7 +523,7 @@ html {
     var(--hover-color),
     var(--secondary-color)
   ); */
-  background: #d87c6a;
+  background: #D49A82;
   /* background: linear-gradient(235deg, var(--primary-color), var(--hover-color)); */
   color: white;
   padding: 6px 10px;
@@ -620,7 +620,7 @@ html {
   pointer-events: none;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #d87c6a;
+  border-top: 6px solid #D49A82;
   /* Updated to use primary color */
   transform: translateY(-50%);
   z-index: 2;
@@ -935,7 +935,7 @@ html {
     var(--primary-color)
   );  */
   /* Updated to use secondary and primary colors */
-  /* background: linear-gradient(#7f2f2f, #d87c6a); */
+  /* background: linear-gradient(#7f2f2f, #D49A82); */
   color: var(--text-dark);
   padding: 20px;
   text-align: center;
@@ -954,8 +954,8 @@ html {
 .feature-icon {
   font-size: 40px;
   background-color: rgba(61, 61, 61, 0.1);
-  background-color: rgba(216, 124, 106, 0.4);
-  /* background: #d87c6a; */
+  background-color: rgba(212, 154, 130, 0.4);
+  /* background: #D49A82; */
   border-radius: 50%;
   padding: 12px;
   margin-bottom: 20px;
@@ -1192,7 +1192,7 @@ button:focus {
 
 /* Footer */
 .footer {
-  background-color: #de998b;
+  background-color: #D49A82;
   /* Updated to use primary color */
   color: white;
   padding: 60px 20px 30px;
@@ -1700,7 +1700,7 @@ button:focus {
     var(--primary-color),
     var(--hover-color)
   );  */
-  background: #d87c6a;
+  background: #D49A82;
   /* Updated to use primary and hover colors */
   color: #ffffff;
   border: none;
@@ -1736,7 +1736,7 @@ button:focus {
   display: inline-block;
   /* To ensure the image size dictates the container */
   max-width: 100%;
-  background: #d87c6a;
+  background: #D49A82;
 }
 
 .video-container img {
@@ -2082,7 +2082,7 @@ button:focus {
 
 
 .news-empty-shape {
-  background: #d87c6a;
+  background: #D49A82;
 }
 
 
@@ -2273,7 +2273,7 @@ button:focus {
   top: 10px;
   font-size: 20px;
   border-radius: 4px;
-  color: #d87c6a;
+  color: #D49A82;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -2288,7 +2288,7 @@ button:focus {
 }
 
 .popup-button {
-  background: #d87c6a;
+  background: #D49A82;
   color: #fff;
   padding: 5px 30px;
   font-weight: 500;
@@ -2442,12 +2442,12 @@ button:focus {
 }
 
 .blog-latest-content a {
-  color: #d87c6a;
+  color: #D49A82;
   transition: all 0.2s ease-in-out;
 }
 
 .blog-latest-content a:hover {
-  background: #d87c6a;
+  background: #D49A82;
   color: #fff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -2555,7 +2555,7 @@ button:focus {
 
 /* Scrollbar thumb */
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: #d87c6a;
+  background-color: #D49A82;
   border-radius: 4px;
 }
 
@@ -2576,7 +2576,7 @@ button:focus {
   right: 0;
   top: 30px;
   background-color: #fff;
-  border: 1px solid #d87c6a;
+  border: 1px solid #D49A82;
   list-style: none;
   padding: 4px 0;
   margin: 0;

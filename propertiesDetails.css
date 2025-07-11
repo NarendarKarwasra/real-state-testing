@@ -28,7 +28,7 @@
     height: 40px;
     border-radius: 4px;
     background: #ffe5df;
-    color: #ca4c33;
+    color: #8f5339;
     font-size: 16px;
     font-weight: 500;
     padding: 8px;
@@ -39,7 +39,7 @@
 }
 
 .button-div button:hover{
-    background: #D87C6A;
+    background: #D49A82;
     color: #fff;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .transparent-back-btn {
-    background: #D87C6A;
+    background: #D49A82;
     width: 140px;
     height: 40px;
     position: absolute;
@@ -120,12 +120,12 @@
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    border: 2px solid #D87C6A;
+    border: 2px solid #D49A82;
 }
 
 .transparent-back-btn:hover {
     background: #fff;
-    color: #D87C6A;
+    color: #D49A82;
 }
 
 
@@ -153,7 +153,7 @@
 
 .price {
     font-size: 20px;
-    color: #D87C6A;
+    color: #D49A82;
     font-weight: 600;
 }
 
@@ -181,7 +181,7 @@
 
 .detail a {
     margin-top: 10px;
-    color: #D87C6A !important;
+    color: #D49A82 !important;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -214,7 +214,7 @@
 }
 
 .contact-div .contact-btn-email {
-    background: #D87C6A;
+    background: #D49A82;
     border: none !important;
     padding: 8px 20px;
     font-size: 16px;
@@ -335,7 +335,7 @@
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid #D87C6A;
+  border: 2px solid #D49A82;
   border-radius: 2px;
   position: relative;
   cursor: pointer;
@@ -347,7 +347,7 @@
   top: 1px;
   width: 6px;
   height: 12px;
-  border: solid #D87C6A;
+  border: solid #D49A82;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -356,7 +356,7 @@
     width: 100%;
     margin: 20px 0;
     height: 40px;
-    background: #D87C6A;
+    background: #D49A82;
     border-radius: 4px;
     color: #fff;
     font-weight: 600;
@@ -376,7 +376,7 @@
     margin-top: 20px;
 }
 .call-box a{
-    color: #D87C6A !important;
+    color: #D49A82 !important;
     font-size: 20px;
     margin: 10px;
 }
@@ -404,7 +404,7 @@
     color: #545454;
 }
 .info-div{
-    border: 1px solid #D87C6A;
+    border: 1px solid #D49A82;
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
@@ -420,10 +420,10 @@
     height: 46px;
     border-radius: 0;
     border-top: none;
-    border: 1px solid #D87C6A !important;
+    border: 1px solid #D49A82 !important;
     border-right: none;
     background: #fff;
-    color: #D87C6A;
+    color: #D49A82;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
@@ -448,9 +448,9 @@
   gap: 5%;
 }
 .tab-btn.active {
-  background: #D87C6A;
+  background: #D49A82;
   color: #fff;
-  border: 1px solid #D87C6A !important;
+  border: 1px solid #D49A82 !important;
 }
 
 .info-full-content{
@@ -571,7 +571,7 @@ tr {
     transition: all 0.2s ease-in-out;
 }
 .amen-single:hover {
-    background: #eaa395;
+    background: #D49A82;
 }
 .amen-single-img {
     width: 20px;
@@ -584,7 +584,7 @@ tr {
 }
 .amenities-main a {
     text-decoration: none;
-    color: #D87C6A !important;
+    color: #D49A82 !important;
     font-size: 17px;
     font-weight: 500;
     line-height: 22px;
@@ -602,11 +602,11 @@ tr {
     justify-content: center;
     cursor: pointer;
     background: #fff;
-    border: 1px solid #D87C6A;
+    border: 1px solid #D49A82;
     transition: all 0.2s ease-in-out;
 }
 .amen-more:hover{
-    background-color: #D87C6A;
+    background-color: #D49A82;
 }
 
 
@@ -633,20 +633,20 @@ tr {
     border-radius: 6px 6px 0 0;
     font-size: 16px;
     background-color: #fff;
-    color: #D87C6A;
-    border: 1px solid #D87C6A !important;
+    color: #D49A82;
+    border: 1px solid #D49A82 !important;
     /* border-bottom: none; */
     cursor: pointer;
 }
 .floor-btn .active {
-    background-color: #D87C6A;
+    background-color: #D49A82;
     color: white;
-    border: 2px solid #D87C6A !important;
+    border: 2px solid #D49A82 !important;
     border-bottom: none;
 }
 .floor {
     padding: 20px;
-    border: 1px solid #D87C6A;
+    border: 1px solid #D49A82;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -658,7 +658,7 @@ tr {
     gap: 10px;
 }
 .floor-small div {
-    border: 1px solid #D87C6A;
+    border: 1px solid #D49A82;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -734,7 +734,7 @@ tr {
   top: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid #D87C6A;
+  border: 2px solid #D49A82;
   border-radius: 30px;
 }
 
@@ -751,7 +751,7 @@ tr {
 }
 
 .blob-btn:hover {
-  color: #D87C6A;
+  color: #D49A82;
   border-radius: 30px;
 }
 
@@ -771,7 +771,7 @@ tr {
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  background: #D87C6A;
+  background: #D49A82;
 }
 
 .blob-btn__blobs {
@@ -850,12 +850,12 @@ tr {
 }
 
 .alert button {
-    border: 1px solid #D87C6A;
+    border: 1px solid #D49A82;
     border-radius: 4px;
     padding: 10px;
     font-size: 14px;
     background: none;
-    color: #D87C6A;
+    color: #D49A82;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -865,7 +865,7 @@ tr {
     font-size: 18px;
 }
 .alert button:hover {
-    background: #D87C6A;
+    background: #D49A82;
     color: #fff;
 }
 
@@ -894,7 +894,7 @@ tr {
 
 .right-extra a {
     text-decoration: none;
-    color: #D87C6A;
+    color: #D49A82;
     font-size: 14px;
     transition: all 0.2s ease-in-out;
 }
@@ -975,14 +975,14 @@ tr {
     font-size: 20px;
 }
 .popup-head button{
-    border: 2px solid #D87C6A;
-    color: #D87C6A;
+    border: 2px solid #D49A82;
+    color: #D49A82;
     background: none;
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
 }
 .popup-head button:hover{
-    background: #D87C6A;
+    background: #D49A82;
     color: #fff;
 }
 .popup-head button i{
@@ -1029,7 +1029,7 @@ tr {
 .scroll-thumb {
     width: 3px;
     height: 100px;
-    background-color: #D87C6A;
+    background-color: #D49A82;
     border-radius: 4px;
     position: absolute;
     top: 0;
@@ -1285,7 +1285,7 @@ tr {
     .floor-btn button {
         padding: 8px 25px;
         font-size: 14px;
-        border: 1px solid #D87C6A;
+        border: 1px solid #D49A82;
     }
 
     .floor {
@@ -1586,7 +1586,7 @@ tr {
     font-size: 16px;
 }
 .popup-head button{
-    border: 1px solid #D87C6A;
+    border: 1px solid #D49A82;
 }
 .popup-head button i{
     font-size: 18px;
