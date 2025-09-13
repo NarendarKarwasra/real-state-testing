@@ -147,12 +147,10 @@
                 </div>
               </div>
 
-              <div class="row mb-1 mt-1 otp-full-section" style="align-items: center; display: none;">
-                <div class="form-group mb-2">
+              <!-- <div class="row mb-1 mt-1 otp-full-section" style="align-items: center; display: none;">
+                <div class="form-group otp-digit-part">
                   <label for="name">Enter OTP</label>
                   <div class="otpSection">
-                    <input type="number" maxlength="1" class="input" />
-                    <input type="number" maxlength="1" class="input" />
                     <input type="number" maxlength="1" class="input" />
                     <input type="number" maxlength="1" class="input" />
                     <input type="number" maxlength="1" class="input" />
@@ -161,9 +159,8 @@
                 </div>
                 <div class="form-group otp-submit-section">
                   <a href="">Resend OTP in 60s.</a>
-                  <button id="otpSubmit">Submit</button>
                 </div>
-              </div>
+              </div> -->
 
 
               <div class="row">
@@ -1046,17 +1043,43 @@
 
 
 
+  <!-- otp Popup -->
+  <div id="otpPopup" class="otp-popup">
+    <div class="otp-content">
+      <i class="fas fa-window-close" onclick="closeOtpPopup()"></i>
+
+      <p>Please enter the OTP to verify your number</p>
+      <p class="text-phone">An OTP has been sent to 9876543210</p>
+
+      <div class="otpSection">
+        <input type="text" maxlength="1" class="input" inputmode="numeric" pattern="[0-9]*" />
+        <input type="text" maxlength="1" class="input" inputmode="numeric" pattern="[0-9]*" />
+        <input type="text" maxlength="1" class="input" inputmode="numeric" pattern="[0-9]*" />
+        <input type="text" maxlength="1" class="input" inputmode="numeric" pattern="[0-9]*" />
+      </div>
+      <div class="form-group otp-submit-section">
+        <!-- Countdown text -->
+        <span id="resendText">Resend OTP in <span id="countdown">10</span>s.</span>
+        <!-- Hidden Resend Button -->
+        <div id="resendBtn" onclick="resendOtp()" style="display:none;">Resend OTP</div>
+      </div>
+
+      <button onclick="validateOtp()" class="btn popup-button">Validate OTP</button>
+
+    </div>
+  </div>
+
   <!-- Thank You Popup Popup -->
   <div id="thankYouPopup" class="thank-you-popup">
     <div class="thank-you-content">
-      <i class="fas fa-window-close" onclick="closePopup()"></i>
+      <i class="fas fa-window-close" onclick="closeThankYouPopup()"></i>
       <div class="popup-img">
         <img src="assets/popup3.webp" alt="">
       </div>
       <h4>Thank You!</h4>
       <p>Your form has been submitted successfully.</p>
       <p>Our support team will contact you soon.</p>
-      <button onclick="closePopup()" class="btn popup-button">Done</button>
+      <button onclick="closeThankYouPopup()" class="btn popup-button">Done</button>
     </div>
   </div>
 
@@ -1231,18 +1254,44 @@
         }
         // If all validations pass
         if (isValid) {
-          showPopup();
+          showOtpPopup();
         }
       });
     });
-    function closePopup() {
-      const Popup = document.getElementById('thankYouPopup');
-      Popup.style.display = 'none';
-    };
-    function showPopup() {
-      const Popup = document.getElementById('thankYouPopup');
-      Popup.style.display = 'flex';
-    };
+    // OTP popup controls
+    function closeOtpPopup() {
+      document.getElementById('otpPopup').style.display = 'none';
+    }
+    function showOtpPopup() {
+      document.getElementById('otpPopup').style.display = 'flex';
+    }
+
+    // Thank You popup controls
+    function closeThankYouPopup() {
+      document.getElementById('thankYouPopup').style.display = 'none';
+    }
+    function showThankYouPopup() {
+      document.getElementById('thankYouPopup').style.display = 'flex';
+    }
+
+    // Validate OTP
+    function validateOtp() {
+      const inputs = document.querySelectorAll(".otpSection .input");
+      let otp = "";
+
+      inputs.forEach(input => {
+        otp += input.value.trim();
+      });
+
+      if (otp.length !== 4 || /\D/.test(otp)) {
+        alert("Please enter all 4 digits of the OTP.");
+        return;
+      }
+
+      // If valid
+      closeOtpPopup();
+      showThankYouPopup();
+    }
   </script>
 
   <!-- Nave Bar -->
@@ -1338,27 +1387,71 @@
 
 
 
-  <!-- otp section -->
+
+
+
   <script>
-    const mobileInput = document.getElementById("mobileNumber");
-    const otpSection = document.querySelector(".otp-full-section");
-    const otpSubmitBtn = document.getElementById("otpSubmit");
+    document.querySelectorAll(".otpSection .input").forEach((input, index, arr) => {
+      input.addEventListener("input", (e) => {
+        // allow only digits
+        input.value = input.value.replace(/[^0-9]/g, "");
 
-    // Show OTP section when mobile number reaches 10 digits
-    mobileInput.addEventListener("input", function () {
-      if (this.value.length === 10) {
-        otpSection.style.display = "flex"; // show
-      } else {
-        otpSection.style.display = "none"; // hide if less than 10 digits
-      }
+        if (input.value.length === 1 && index < arr.length - 1) {
+          arr[index + 1].focus(); // move to next input
+        }
+      });
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace" && !input.value && index > 0) {
+          arr[index - 1].focus(); // go back on delete
+        }
+      });
     });
+  </script>
 
-    // Hide OTP section when Submit is clicked
-    otpSubmitBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      otpSection.style.display = "none";
-      alert("OTP Submitted!");
-    });
+
+
+  <!-- otp timer and resend section -->
+  <script>
+    let countdownInterval;
+
+    function startResendTimer() {
+      let timeLeft = 10;
+      const countdownElement = document.getElementById("countdown");
+      const resendText = document.getElementById("resendText");
+      const resendBtn = document.getElementById("resendBtn");
+      // Reset state
+      resendText.style.display = "inline";
+      resendBtn.style.display = "none";
+      countdownElement.textContent = timeLeft;
+
+      // Clear previous interval (if any)
+      clearInterval(countdownInterval);
+
+      // Start countdown
+      countdownInterval = setInterval(() => {
+        timeLeft--;
+        countdownElement.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+          clearInterval(countdownInterval);
+          resendText.style.display = "none";   // hide text
+          resendBtn.style.display = "inline";  // show a
+        }
+      }, 1000);
+    }
+
+    // Trigger timer when OTP popup is shown
+    function showOtpPopup() {
+      document.getElementById("otpPopup").style.display = "flex";
+      startResendTimer();
+    }
+
+    // Handle resend click
+    function resendOtp() {
+      alert("OTP resent!");
+      startResendTimer();
+    }
+
   </script>
 
 </body>
