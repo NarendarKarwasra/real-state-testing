@@ -109,6 +109,35 @@
 
 
 
+  
+.otp-full-section {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.otp-full-section div label {
+  text-align: left;
+}
+
+.otpSection {
+  gap: 3px;
+}
+
+.otp-submit-section {
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.otp-submit-section a {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+
+
+
+
   .service-card {
     padding: 10px;
   }
@@ -253,6 +282,37 @@
     align-content: center;
     text-align: center;
   }
+
+
+
+
+
+
+  .otp-full-section {
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.otp-full-section div label {
+  text-align: center;
+}
+
+.otpSection {
+  gap: 4px;
+}
+
+.otp-submit-section {
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.otp-submit-section a {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+
+
 
   .app-buttons {
     width: 100%;
@@ -986,4 +1046,35 @@
     padding-top: 160px;
     padding-bottom: 60px;
   }
+
+
+
+  
+
+.otp-full-section {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.otp-full-section div label {
+  text-align: left;
+}
+
+.otpSection {
+  gap: 3px;
+}
+
+.otp-submit-section {
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
+
+.otp-submit-section a {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+
+
 }
