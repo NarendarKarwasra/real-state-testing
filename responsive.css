@@ -943,7 +943,33 @@
 
 
 
+@media (max-width: 400px) {
 
+  .otp-full-section {
+  padding: 6px 0px 10px;
+  border-radius: 2px;
+}
+  .otpSection {
+  gap: 3px;
+}
+.otpSection .input {
+  height: 34px;
+  width: 32px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+.otp-submit-section button {
+  height: 32px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.otp-submit-section a {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+}
 
 
 
