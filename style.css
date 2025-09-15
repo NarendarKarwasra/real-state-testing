@@ -2503,7 +2503,7 @@ button:focus {
 
 .thankyou-section {
   background: linear-gradient(rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8)),
-    url("./assets/thankyou-back.jpg") no-repeat center center/cover;
+    url("./assets/thankyou-back.webp") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
