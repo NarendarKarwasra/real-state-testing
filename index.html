@@ -1046,7 +1046,6 @@
   <!-- otp Popup -->
   <div id="otpPopup" class="otp-popup">
     <div class="otp-content">
-      <i class="fas fa-window-close" onclick="closeOtpPopup()"></i>
 
       <p>Please enter the OTP to verify your number</p>
       <p class="text-phone">An OTP has been sent to 9876543210</p>
@@ -1070,7 +1069,7 @@
   </div>
 
   <!-- Thank You Popup Popup -->
-  <div id="thankYouPopup" class="thank-you-popup">
+  <!-- <div id="thankYouPopup" class="thank-you-popup">
     <div class="thank-you-content">
       <i class="fas fa-window-close" onclick="closeThankYouPopup()"></i>
       <div class="popup-img">
@@ -1081,7 +1080,7 @@
       <p>Our support team will contact you soon.</p>
       <button onclick="closeThankYouPopup()" class="btn popup-button">Done</button>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -1270,9 +1269,9 @@
     function closeThankYouPopup() {
       document.getElementById('thankYouPopup').style.display = 'none';
     }
-    function showThankYouPopup() {
-      document.getElementById('thankYouPopup').style.display = 'flex';
-    }
+    // function showThankYouPopup() {
+    //   document.getElementById('thankYouPopup').style.display = 'flex';
+    // }
 
     // Validate OTP
     function validateOtp() {
@@ -1290,7 +1289,8 @@
 
       // If valid
       closeOtpPopup();
-      showThankYouPopup();
+      // showThankYouPopup();
+      window.location.href = "thank-you.html";
     }
   </script>
 
